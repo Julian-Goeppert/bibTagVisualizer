@@ -1,0 +1,4938 @@
+<!DOCTYPE html>
+<html><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Zotero-Bericht</title>
+		<link rel="stylesheet" type="text/css" href="data:text/css;base64,Ym9keSB7CgliYWNrZ3JvdW5kOiB3aGl0ZTsKfQoKYSB7Cgl0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsKfQoKYm9keSB7CglwYWRkaW5nOiAwOwp9Cgp1bC5yZXBvcnQgbGkuaXRlbSB7Cglib3JkZXItdG9wOiA0cHggc29saWQgIzU1NTsKCXBhZGRpbmctdG9wOiAxZW07CglwYWRkaW5nLWxlZnQ6IDFlbTsKCXBhZGRpbmctcmlnaHQ6IDFlbTsKCW1hcmdpbi1ib3R0b206IDJlbTsKfQoKaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7Cglmb250LXdlaWdodDogbm9ybWFsOwp9CgpoMiB7CgltYXJnaW46IDAgMCAuNWVtOwp9CgpoMi5wYXJlbnRJdGVtIHsKCWZvbnQtd2VpZ2h0OiBib2xkOwoJZm9udC1zaXplOiAxZW07CglwYWRkaW5nOiAwIDAgLjVlbTsKCWJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjY2NjOwp9CgovKiBJZiBjb21iaW5pbmcgY2hpbGRyZW4sIGRpc3BsYXkgcGFyZW50IHNsaWdodGx5IGxhcmdlciAqLwp1bC5yZXBvcnQuY29tYmluZUNoaWxkSXRlbXMgaDIucGFyZW50SXRlbSB7Cglmb250LXNpemU6IDEuMWVtOwoJcGFkZGluZy1ib3R0b206IC43NWVtOwoJbWFyZ2luLWJvdHRvbTogLjRlbTsKfQoKaDIucGFyZW50SXRlbSAudGl0bGUgewoJZm9udC13ZWlnaHQ6IG5vcm1hbDsKfQoKaDMgewoJbWFyZ2luLWJvdHRvbTogLjZlbTsKCWZvbnQtd2VpZ2h0OiBib2xkICFpbXBvcnRhbnQ7Cglmb250LXNpemU6IDFlbTsKCWRpc3BsYXk6IGJsb2NrOwp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0aCB7Cgl2ZXJ0aWNhbC1hbGlnbjogdG9wOwoJdGV4dC1hbGlnbjogcmlnaHQ7Cgl3aWR0aDogMTUlOwoJd2hpdGUtc3BhY2U6IG5vd3JhcDsKfQoKdGQgewoJcGFkZGluZy1sZWZ0OiAuNWVtOwp9CgoKdWwucmVwb3J0LCB1bC5ub3RlcywgdWwudGFncyB7CglsaXN0LXN0eWxlOiBub25lOwoJbWFyZ2luLWxlZnQ6IDA7CglwYWRkaW5nLWxlZnQ6IDA7Cn0KCi8qIFRhZ3MgKi8KaDMudGFncyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC50YWdzIHsKCWxpbmUtaGVpZ2h0OiAxLjc1ZW07CglsaXN0LXN0eWxlOiBub25lOwp9Cgp1bC50YWdzIGxpIHsKCWRpc3BsYXk6IGlubGluZTsKfQoKdWwudGFncyBsaTpub3QoOmxhc3QtY2hpbGQpOmFmdGVyIHsKCWNvbnRlbnQ6ICcsICc7Cn0KCgovKiBDaGlsZCBub3RlcyAqLwpoMy5ub3RlcyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC5ub3RlcyB7CgltYXJnaW4tYm90dG9tOiAxLjJlbTsKfQoKdWwubm90ZXMgPiBsaTpmaXJzdC1jaGlsZCBwIHsKCW1hcmdpbi10b3A6IDA7Cn0KCnVsLm5vdGVzID4gbGkgewoJcGFkZGluZzogLjdlbSAwOwp9Cgp1bC5ub3RlcyA+IGxpOm5vdCg6bGFzdC1jaGlsZCkgewoJYm9yZGVyLWJvdHRvbTogMXB4ICNjY2Mgc29saWQ7Cn0KCgp1bC5ub3RlcyA+IGxpIHA6Zmlyc3QtY2hpbGQgewoJbWFyZ2luLXRvcDogMDsKfQoKdWwubm90ZXMgPiBsaSBwOmxhc3QtY2hpbGQgewoJbWFyZ2luLWJvdHRvbTogMDsKfQoKLyogQWRkIHF1b3RhdGlvbiBtYXJrcyBhcm91bmQgYmxvY2txdW90ZSAqLwp1bC5ub3RlcyA+IGxpIGJsb2NrcXVvdGUgcDpub3QoOmVtcHR5KTpiZWZvcmUsCmxpLm5vdGUgYmxvY2txdW90ZSBwOm5vdCg6ZW1wdHkpOmJlZm9yZSB7Cgljb250ZW50OiAn4oCcJzsKfQoKdWwubm90ZXMgPiBsaSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciwKbGkubm90ZSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciB7Cgljb250ZW50OiAn4oCdJzsKfQoKLyogUHJlc2VydmUgd2hpdGVzcGFjZSBvbiBwbGFpbnRleHQgbm90ZXMgKi8KdWwubm90ZXMgbGkgcC5wbGFpbnRleHQsIGxpLm5vdGUgcC5wbGFpbnRleHQsIGRpdi5ub3RlIHAucGxhaW50ZXh0IHsKCXdoaXRlLXNwYWNlOiBwcmUtd3JhcDsKfQoKLyogRGlzcGxheSB0YWdzIHdpdGhpbiBjaGlsZCBub3RlcyBpbmxpbmUgKi8KdWwubm90ZXMgaDMudGFncyB7CglkaXNwbGF5OiBpbmxpbmU7Cglmb250LXNpemU6IDFlbTsKfQoKdWwubm90ZXMgaDMudGFnczphZnRlciB7Cgljb250ZW50OiAnICc7Cn0KCnVsLm5vdGVzIHVsLnRhZ3MgewoJZGlzcGxheTogaW5saW5lOwp9Cgp1bC5ub3RlcyB1bC50YWdzIGxpOm5vdCg6bGFzdC1jaGlsZCk6YWZ0ZXIgewoJY29udGVudDogJywgJzsKfQoKCi8qIENoaWxkIGF0dGFjaG1lbnRzICovCmgzLmF0dGFjaG1lbnRzIHsKCWZvbnQtc2l6ZTogMS4xZW07Cn0KCnVsLmF0dGFjaG1lbnRzIGxpIHsKCXBhZGRpbmctdG9wOiAuNWVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSB7CgltYXJnaW4tbGVmdDogMmVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSBwOmZpcnN0LWNoaWxkIHsKCW1hcmdpbi10b3A6IC43NWVtOwp9Cg==">
+		<link rel="stylesheet" type="text/css" media="screen,projection" href="data:text/css;base64,LyogR2VuZXJpYyBzdHlsZXMgKi8KYm9keSB7Cglmb250OiA2Mi41JSBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cgl3aWR0aDogNzgwcHg7CgltYXJnaW46IDAgYXV0bzsKfQoKaDIgewoJZm9udC1zaXplOiAxLjVlbTsKCWxpbmUtaGVpZ2h0OiAxLjVlbTsKCWZvbnQtZmFtaWx5OiBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cn0KCnAgewoJbGluZS1oZWlnaHQ6IDEuNWVtOwp9CgphOmxpbmssIGE6dmlzaXRlZCB7Cgljb2xvcjogIzkwMDsKfQoKYTpob3ZlciwgYTphY3RpdmUgewoJY29sb3I6ICM3Nzc7Cn0KCgp1bC5yZXBvcnQgewoJZm9udC1zaXplOiAxLjRlbTsKCXdpZHRoOiA2ODBweDsKCW1hcmdpbjogMCBhdXRvOwoJcGFkZGluZzogMjBweCAyMHB4Owp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0YWJsZSB7Cglib3JkZXI6IDFweCAjY2NjIHNvbGlkOwoJb3ZlcmZsb3c6IGF1dG87Cgl3aWR0aDogMTAwJTsKCW1hcmdpbjogLjFlbSBhdXRvIC43NWVtOwoJcGFkZGluZzogMC41ZW07Cn0K">
+		<link rel="stylesheet" type="text/css" media="print" href="data:text/css;base64,Ym9keSB7Cglmb250OiAxMnB0ICJUaW1lcyBOZXcgUm9tYW4iLCBUaW1lcywgR2VvcmdpYSwgc2VyaWY7CgltYXJnaW46IDA7Cgl3aWR0aDogYXV0bzsKCWNvbG9yOiBibGFjazsKfQoKLyogUGFnZSBCcmVha3MgKHBhZ2UtYnJlYWstaW5zaWRlIG9ubHkgcmVjb2duaXplZCBieSBPcGVyYSkgKi8KaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7CglwYWdlLWJyZWFrLWFmdGVyOiBhdm9pZDsKCXBhZ2UtYnJlYWstaW5zaWRlOiBhdm9pZDsKfQoKdWwsIG9sLCBkbCB7CglwYWdlLWJyZWFrLWluc2lkZTogYXZvaWQ7Cgljb2xvci1hZGp1c3Q6IGV4YWN0Owp9CgpoMiB7Cglmb250LXNpemU6IDEuM2VtOwoJbGluZS1oZWlnaHQ6IDEuM2VtOwp9CgphIHsKCWNvbG9yOiAjMDAwOwoJdGV4dC1kZWNvcmF0aW9uOiBub25lOwp9Cg==">
+	</head>
+	<body>
+		<ul class="report combineChildItems">
+			<li id="item_LYJYRMU5" class="item webpage">
+			<h2>Verfahren und Protokolle für sicheren Rechtsverkehr auf dezentralen und spontanen elektronischen Märkten</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Webseite</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Michael Conrad</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>Die Arbeit thematisiert das Problem der fehlenden 
+Rechtssicherheit aktueller elektronischer Märkte. Für das Szenario eines
+ dezentralen elektronischen Marktplatzes wird eine verteilte 
+Marktplattform vorgestellt, die einen sicheren Rechtsverkehr ermöglicht.
+ Einer der Schwerpunkte der Arbeit stellt dabei der nachweisbare Zugang 
+einer elektronischen Willenserklärung auf dem verteilten Marktplatz dar.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2010</td>
+					</tr>
+					<tr>
+					<th>Sprache</th>
+						<td>de</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://publikationen.bibliothek.kit.edu/1000019723">https://publikationen.bibliothek.kit.edu/1000019723</a></td>
+					</tr>
+					<tr>
+					<th>Heruntergeladen am</th>
+						<td>28.1.2022, 14:24:11</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>ISBN: 9783866445659
+DOI: 10.5445/KSP/1000019723</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>28.1.2022, 14:24:11</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>28.1.2022, 14:24:11</td>
+					</tr>
+				</tbody></table>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_TQJIFCYW">
+<div><p>Dissertation, bei der bei verteilten Märkten PKI angewandt wird</p>
+<p>&nbsp;</p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_4SYTU5S5">Snapshot					</li>
+					<li id="item_UA6GDL4P">Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_WDZ4K8FZ" class="item journalArticle">
+			<h2>Trusted Cloud-Edge Network Resource Management: DRL-Driven Service Function Chain Orchestration for IoT</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Zeitschriftenartikel</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Shaoyong Guo</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Yao Dai</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Siya Xu</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Xuesong Qiu</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Feng Qi</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>Private and public networks sharing resources for Internet of 
+Things (IoT) network through network function virtualization (NFV) and 
+software-defined networking (SDN) forms a heterogeneous cloud-edge 
+environment. However, the heterogeneous cloud-edge network faces trust 
+and adaptation issues in resource allocation. To address these two 
+problems, we introduce consortium blockchain and deep reinforcement 
+learning (DRL) to construct the trusted and auto-adjust service function
+ chain (SFC) orchestration architecture. In the architecture, this 
+article integrates the consortium blockchain into the distributed SFC 
+orchestration model to realize trusted resource sharing. In addition, 
+for realizing auto-adjusted service provision, this article designs a 
+dynamic hierarchical SFC orchestration algorithm (DHSOA) based on DRL to
+ minimize the orchestration cost and improve the quality of service. 
+Moreover, considering the dynamics of network entities, this article 
+proposes a time-slotted model to support dynamic service migration which
+ adapts to the high-mobility IoT network. The simulation results show 
+that DHSOA has better performance than the link-state routing algorithm 
+and deep Q -network placement algorithm not only in cost saving of 15.8%
+ and 10.1% but also in time saving of 22.0% and 10.0%.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2020-07</td>
+					</tr>
+					<tr>
+					<th>Kurztitel</th>
+						<td>Trusted Cloud-Edge Network Resource Management</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>Conference Name: IEEE Internet of Things Journal</td>
+					</tr>
+					<tr>
+					<th>Band</th>
+						<td>7</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>6010-6022</td>
+					</tr>
+					<tr>
+					<th>Publikation</th>
+						<td>IEEE Internet of Things Journal</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/JIOT.2019.2951593">10.1109/JIOT.2019.2951593</a></td>
+					</tr>
+					<tr>
+					<th>Ausgabe</th>
+						<td>7</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>2327-4662</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.2.2022, 18:03:24</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.2.2022, 18:03:24</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Blockchain</li>
+					<li>Internet of Things</li>
+					<li>Cloud computing</li>
+					<li>Heuristic algorithms</li>
+					<li>deep reinforcement learning (DRL)</li>
+					<li>Internet of Things (IoT)</li>
+					<li>Optimization</li>
+					<li>Reinforcement learning</li>
+					<li>Resource management</li>
+					<li>service function chain (SFC) orchestration</li>
+					<li>trusted cloud-edge network</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_8QV69IID">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_F6FMA4MH" class="item conferencePaper">
+			<h2>Trust Management of Mobile Users P2P Nodes Based on Blockchain</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Xiang Wu</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Hao Wu</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>Mobile users need to consider the credibility of nodes to 
+ensure their privacy when building a P2P network. Therefore, how to 
+perform node trust management is an urgent problem to be solved. This 
+paper proposes a trust management method that combines incentive 
+mechanisms and punishment measures, introduces time-sensitive functions,
+ integrates hash chains, and builds a mobile user trust evaluation 
+model.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2020-12</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>507-511</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2020 IEEE 6th International Conference on Computer and Communications (ICCC)</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2020 IEEE 6th International Conference on Computer and Communications (ICCC)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/ICCC51575.2020.9345097">10.1109/ICCC51575.2020.9345097</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>20.2.2022, 14:33:21</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>20.2.2022, 14:33:21</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Blockchain</li>
+					<li>Privacy</li>
+					<li>Time measurement</li>
+					<li>Buildings</li>
+					<li>Trust management</li>
+					<li>Conferences</li>
+					<li>Correlation</li>
+					<li>hash</li>
+					<li>P2P network</li>
+					<li>trust evaluation</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_95DEPK6X">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_M9T2JS5A" class="item conferencePaper">
+			<h2>Trust Management in Smart Grid: A Markov Trust Model</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Dimitrios Pliatsios</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Panagiotis Sarigiannidis</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Georgios Efstathopoulos</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Antonios Sarigiannidis</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Apostolos Tsiakalos</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>By leveraging the advancements in Information and 
+Communication Technologies (ICT), Smart Grid (SG) aims to modernize the 
+traditional electric power grid towards efficient distribution and 
+reliable management of energy in the electrical domain. The SG Advanced 
+Metering Infrastructure (AMI) contains numerous smart meters, which are 
+deployed throughout the distribution grid. However, these smart meters 
+are susceptible to cyberthreats that aim to disrupt the normal operation
+ of the SG. Cyberattacks can have various consequences in the smart 
+grid, such as incorrect customer billing or equipment destruction. 
+Therefore, these devices should operate on a trusted basis in order to 
+ensure the availability, confidentiality, and integrity of the metering 
+data. In this paper, we propose a Markov chain trust model that 
+determines the Trust Value (TV) for each AMI device based on its 
+behavior. Finally, numerical computations were carried out in order to 
+investigate the reaction of the proposed model to the behavior changes 
+of a device.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2020-09</td>
+					</tr>
+					<tr>
+					<th>Kurztitel</th>
+						<td>Trust Management in Smart Grid</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>1-4</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2020 9th International Conference on Modern Circuits and Systems Technologies (MOCAST)</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2020 9th International Conference on Modern Circuits and Systems Technologies (MOCAST)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/MOCAST49295.2020.9200256">10.1109/MOCAST49295.2020.9200256</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>12.2.2022, 09:50:02</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>12.2.2022, 09:50:02</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computational modeling</li>
+					<li>Security</li>
+					<li>TV</li>
+					<li>Advanced Metering Infrastructure</li>
+					<li>Convergence</li>
+					<li>Cybersecurity</li>
+					<li>Markov Model</li>
+					<li>Markov processes</li>
+					<li>Numerical models</li>
+					<li>Smart Grid</li>
+					<li>Smart grids</li>
+					<li>Trust Model</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_5LW9JMJ9">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_HLX5JSTN" class="item journalArticle">
+			<h2>Trust Issues in Microelectronics: The Concerns and the Countermeasures</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Zeitschriftenartikel</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Tamzidul Hoque</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Patanjali SLPSK</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Swarup Bhunia</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>The semiconductor industry is constantly striving to improve 
+the performance, reliability, and cost of electronic devices. The 
+growing complexity in the design process of microelectronics coupled 
+with the requirement of significant investment in research and 
+development means that there is hardly any entity in the industry that 
+is capable of acquiring the state-of-the-art technologies for all facets
+ of the development process across myriad niche device technologies. 
+Therefore, for economic and practical reasons, the modern electronic 
+supply chain relies on several different vendors that specialize in a 
+specific area of the design and fabrication process. From a security 
+perspective, this distributed manufacturing process violates the trust 
+of the underlying hardware as any entity in the supply chain could 
+maliciously modify the design. This poses a significant concern, 
+especially for government, military applications, and consumer 
+electronic products handling private and critical data during the 
+acquisition of untrusted microelectronic designs and components. Hence, 
+trust has emerged as a crucial constraint that the various steps in the 
+microelectronic manufacturing process should consider in order to ensure
+ that no malicious functionality exists in the hardware. In the last 
+decade, several works have proposed steps both to establish and verify 
+trust in microelectronics. However, not all threat models are adequately
+ covered, and the solutions are pertinent to a limited category of 
+devices. In this article, we present the challenges in establishing 
+trust in today's distributed supply chain environment by discussing the 
+attack models at each step of the manufacturing process. We also shed 
+light on the existing solutions that try to address these threats and 
+discuss their limitations. Finally, we elaborate on one of the existing 
+supply chain standards where trust verification is still infeasible and 
+identify avenues for future research.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2020-11</td>
+					</tr>
+					<tr>
+					<th>Kurztitel</th>
+						<td>Trust Issues in Microelectronics</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>Conference Name: IEEE Consumer Electronics Magazine</td>
+					</tr>
+					<tr>
+					<th>Band</th>
+						<td>9</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>72-83</td>
+					</tr>
+					<tr>
+					<th>Publikation</th>
+						<td>IEEE Consumer Electronics Magazine</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/MCE.2020.2988048">10.1109/MCE.2020.2988048</a></td>
+					</tr>
+					<tr>
+					<th>Ausgabe</th>
+						<td>6</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>2162-2256</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.2.2022, 18:00:38</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.2.2022, 18:00:38</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Hardware</li>
+					<li>Supply chains</li>
+					<li>Fabrication</li>
+					<li>Integrated circuits</li>
+					<li>Logic gates</li>
+					<li>Microelectronics</li>
+					<li>Trojan horses</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_T7L9X2WR">IEEE Xplore Full Text PDF					</li>
+					<li id="item_6NE7Y4J4">IEEE Xplore Abstract Record					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_YK5FYMIC" class="item conferencePaper">
+			<h2>Trust Chain Model and Credibility Analysis in Software Systems</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Yang Zheng</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Yin Chunlin</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Fang Zhengyun</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Zhao Na</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>The credibility of software systems is an important indicator 
+in measuring the performance of software systems. Effective analysis of 
+the credibility of systems is a controversial topic in the research of 
+trusted software. In this paper, the trusted boot and integrity metrics 
+of a software system are analyzed. The different trust chain models, 
+chain and star, are obtained by using different methods for credibility 
+detection of functional modules in the system operation. Finally, based 
+on the operation of the system, trust and failure relation graphs are 
+established to analyze and measure the credibility of the system.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2020-05</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>153-156</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2020 5th International Conference on Computer and Communication Systems (ICCCS)</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2020 5th International Conference on Computer and Communication Systems (ICCCS)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/ICCCS49078.2020.9118511">10.1109/ICCCS49078.2020.9118511</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>28.1.2022, 11:47:47</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>28.1.2022, 11:47:47</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Security</li>
+					<li>trust chain model</li>
+					<li>integrity metrics</li>
+					<li>Manganese</li>
+					<li>Measurement</li>
+					<li>Software reliability</li>
+					<li>Software systems</li>
+					<li>trust metrics</li>
+					<li>trusted software</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_DZTE4WDP">
+<div><p>Trust Chain in Bezug auf Module eines Rechners</p>
+<p>&nbsp;</p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_W38UGC38">IEEE Xplore Full Text PDF					</li>
+					<li id="item_N8D82SXJ">IEEE Xplore Abstract Record					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_X7IBFJI2" class="item conferencePaper">
+			<h2>The Transfer of Trust-Chain with Damp</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Bei Zhang</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Chen Chen</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Jianyong Zhu</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>For the need of privilege among the people in pervasive 
+computing environment, trust management became a hot study lecture. 
+There are credential-based trust management and evidence-based trust 
+management. They explain the basis of privilege in terms of a rational 
+trust and an irrational trust respectively. But the existing trust 
+management model didn't combine them well. So as to be more in accord 
+with the subjectivity and fuzzification of trust in reality, this text 
+puts forward a new trust management model. The clou of this model is the
+ transfer of trust chain with damp.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2008-10</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Band</th>
+						<td>2</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>948-952</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2008 Third International Conference on Pervasive Computing and Applications</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2008 Third International Conference on Pervasive Computing and Applications</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/ICPCA.2008.4783747">10.1109/ICPCA.2008.4783747</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>12.2.2022, 09:25:41</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>12.2.2022, 09:25:41</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Environmental management</li>
+					<li>Access control</li>
+					<li>credential</li>
+					<li>damp</li>
+					<li>Engineering management</li>
+					<li>evaluate trust degree</li>
+					<li>path</li>
+					<li>pervasive computing</li>
+					<li>Pervasive computing</li>
+					<li>Research and development</li>
+					<li>Systems engineering and theory</li>
+					<li>trust management</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_WMDIWKQG">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_TX7HFQ7S" class="item conferencePaper">
+			<h2>SWTrust: Generating Trusted Graph for Trust Evaluation in Online Social Networks</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Wenjun Jiang</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Guojun Wang</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>To solve the problem of "Can Alice trust Bob on a service in a
+ social network setting", we propose the SWTrust framework to generate 
+trusted graphs for trust evaluation in online social networks: (1) to 
+develop a novel PSN algorithm for preprocessing a social network, where 
+we classify a user's neighbors by their social distance and define 
+neighbors' priority based on their topic-related degree and 
+target-related degree; (2) to develop distributed algorithms to build 
+trust network (BTN) and to generate trusted graph (GTG). Experimental 
+results with data from Epinions.com show that our work can discover 
+short paths and generate high quality trusted graphs efficiently.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2011-11</td>
+					</tr>
+					<tr>
+					<th>Kurztitel</th>
+						<td>SWTrust</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>ISSN: 2324-9013</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>320-327</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2011IEEE 10th International Conference on Trust, Security and Privacy in Computing and Communications</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2011IEEE 10th International Conference on Trust, Security and Privacy in Computing and Communications</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/TrustCom.2011.251">10.1109/TrustCom.2011.251</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>12.2.2022, 09:41:11</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>12.2.2022, 09:41:11</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computers</li>
+					<li>Educational institutions</li>
+					<li>Measurement</li>
+					<li>Social network services</li>
+					<li>Buildings</li>
+					<li>Data mining</li>
+					<li>Distributed algorithms</li>
+					<li>online social network</li>
+					<li>small world network</li>
+					<li>trusted acquaintance chain</li>
+					<li>trusted graph</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_83DSTTDZ">IEEE Xplore Full Text PDF					</li>
+					<li id="item_2XIVMR32">IEEE Xplore Abstract Record					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_JZD63SRG" class="item conferencePaper">
+			<h2>Silicon systems security and building a root of trust</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Ronald Perez</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>This paper briefly presents a position that hardware-based 
+roots of trust, integrated in silicon with System-on-Chip (SoC) 
+solutions, represent the most current stage in a progression of 
+technologies aimed at realizing the most foundational computer security 
+concepts. A brief look at this historical progression from a personal 
+perspective is followed by an overview of more recent developments, with
+ particular focus on a root of trust for cryptographic key provisioning 
+and SoC feature management aimed at achieving supply chain assurances 
+and serves as a basis for trust that is linked to properties enforced in
+ hardware. The author assumes no prior knowledge of these concepts and 
+developments by the reader.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2015-11</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>1-4</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2015 IEEE Asian Solid-State Circuits Conference (A-SSCC)</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2015 IEEE Asian Solid-State Circuits Conference (A-SSCC)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/ASSCC.2015.7387431">10.1109/ASSCC.2015.7387431</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>20.2.2022, 14:35:37</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>20.2.2022, 14:35:37</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Hardware</li>
+					<li>Cryptography</li>
+					<li>Monitoring</li>
+					<li>Hardware Root of Trust</li>
+					<li>Manufacturing</li>
+					<li>Program processors</li>
+					<li>System Security</li>
+					<li>System-on-chip</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_SDTM49CM">IEEE Xplore Full Text PDF					</li>
+					<li id="item_PWEKX5AV">IEEE Xplore Abstract Record					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_I8GH68GB" class="item conferencePaper">
+			<h2>Security and trust- new challenges to computing today in cyberspace</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Tirumale Ramesh</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>Cyber security threats and issues are escalating in many 
+facets of system domain applications. A comprehensive cyber security 
+model is the need today for quick identification and analysis of various
+ type of threats and attacks for developing a comprehensive mitigation 
+plan. In recent years, hardware threat issues are drawing wide attention
+ adding to the security problem in cyber space. TRUST which is beyond 
+SECURITY is playing a major role. In this paper we present a short 
+synopsis of cyber security and trust for computing today in cyber space 
+that includes hardware security threats, trust and few mitigations.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2014-08</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>1-6</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2014 Seventh International Conference on Contemporary Computing (IC3)</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2014 Seventh International Conference on Contemporary Computing (IC3)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/IC3.2014.6897138">10.1109/IC3.2014.6897138</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.2.2022, 18:12:35</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.2.2022, 18:12:35</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>trust</li>
+					<li>Hardware</li>
+					<li>Computer security</li>
+					<li>Supply chains</li>
+					<li>Software</li>
+					<li>Integrated circuits</li>
+					<li>assurance</li>
+					<li>Cyber-attack</li>
+					<li>supply chain</li>
+					<li>threat</li>
+					<li>Trojans</li>
+					<li>Vectors</li>
+					<li>vulnerabilities</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_UXNNI3FI">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_XCMJ4LU8" class="item conferencePaper">
+			<h2>Secure function chaining enabled by Information-Centric Networking</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Mehdi Bahrami</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Liguang Xie</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Lei Liu</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Akira Ito</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Yang Peng</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Sevak Mnatsakanyan</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Zilong Ye</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Huiping Guo</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>Information-Centric Networking (ICN) has been proposed as a 
+future Internet architecture where data-centric security is one of its 
+most distinguishing features when compared to the channel-based security
+ in IP networks. In ICN, per packet digital signature offers a built-in 
+authentication capability down to the packet level and a fine-grained 
+trust model, yet it is insufficient to address the emerging security 
+challenges in service function chaining, e.g., data may be processed by 
+fake intermediate function nodes. In this paper, we investigate a 
+whole-chain security approach, namely Secure Function Chaining (SFC), 
+which ensures authenticity and data integrity when delivering data 
+content through a chain of function nodes in ICN. In particular, we 
+propose a novel packet signature structure, which consists of a content 
+stack and a signature stack. At the data source and each of intermediate
+ function nodes, we prepend a fixed-length hashed content to the content
+ stack and prepend an unmodified signature (for the hashed content) to 
+the signature stack. The proposed solution enables a Consumer to verify 
+not only the final delivered data content, but also each and every 
+entity in the whole function chaining process - from a Producer to the 
+last function node that delivered the final content. We conduct a 
+comprehensive set of experiments to evaluate the proposed function 
+chaining process and its trust model. The results show the superior 
+performance of the whole-chain security approach over the existing NDN 
+security solution. The results show that the secure proposed scheme is 
+an efficient scheme over the original hop-by-hop NDN signature scheme 
+for a function chaining process and it can be used in substitute of the 
+native scheme.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2017-01</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>415-421</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2017 International Conference on Computing, Networking and Communications (ICNC)</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2017 International Conference on Computing, Networking and Communications (ICNC)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/ICCNC.2017.7876164">10.1109/ICCNC.2017.7876164</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.2.2022, 17:13:36</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.2.2022, 17:13:36</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>ICN</li>
+					<li>Information-centric networking</li>
+					<li>NDN</li>
+					<li>secure function chaining</li>
+					<li>whole-chain security</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_FCPV5Z8F">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_94SHG8VX" class="item conferencePaper">
+			<h2>RTBIMS: Accuracy enhancement in Iterative Multiplication Strategy for computing propagated trust</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Hassan Shakeri</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Abbas Ghaemi Bafghi</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>Trust Management (TM) systems are frameworks for managing 
+security in decentralized environments. However computing the trust 
+value is a challenge when the source entity has no experience of 
+previous direct interaction with the sink. A popular way to estimate the
+ trust value in this case is trust propagation. It suggests evaluating 
+the trust value between two nodes based on the information received from
+ intermediate nodes between them. As we often use a number between 0 and
+ 1 to represent the trust value, the Iterative Multiplication Strategy 
+(IMS) is usually used to estimate the value of propagated trust. In this
+ paper we introduce RTBIMS, an accuracy-enhanced version of IMS. In our 
+algorithm, we first calculate recommendation trust for each intermediate
+ node based on its trustworthiness in judgments and similarity between 
+its views and the source ones. We then use these values in the 
+multiplication chain. We have examined RTBIMS on a popular trust dataset
+ (Advogato) and the results show that its accuracy in evaluating trust 
+is much higher than the basic IMS.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2011-09</td>
+					</tr>
+					<tr>
+					<th>Kurztitel</th>
+						<td>RTBIMS</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>9-14</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2011 8th International ISC Conference on Information Security and Cryptology</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2011 8th International ISC Conference on Information Security and Cryptology</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/ISCISC.2011.6062344">10.1109/ISCISC.2011.6062344</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.2.2022, 17:07:56</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.2.2022, 17:07:56</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>trust</li>
+					<li>trust chain</li>
+					<li>Context</li>
+					<li>iterative multiplication strategy (IMS)</li>
+					<li>RTBIMS</li>
+					<li>trust propagation</li>
+					<li>web of trust</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_9KCX5R56">IEEE Xplore Full Text PDF					</li>
+					<li id="item_ZFVHZUAL">IEEE Xplore Abstract Record					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_SPYBDKLP" class="item conferencePaper">
+			<h2>Research on Trusted Terminal System Based on Trust Chain</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Zhining Lv</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Yu Du</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Zhonghang Li</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Wei Liu</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Bing Qi</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Shan He</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Wei Wang</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Jingbin Liu</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>This paper presents a system in the trusted platform called 
+Trusted Terminal System (TTS). Based on Trusted Cryptography Module 
+(TCM), TTS establishes an comprehensive protection system of the 
+terminal host via several key technologies such as trusted boot, kernel 
+measurement and integrity report. Also, TTS sends the integrity status 
+of terminal to the Trusted Terminal Attestation Server (TTAS) by remote 
+attestation technology for the purpose of ensuring the terminal within a
+ trusted environment. The paper illustrates the fundamental of the TTS, 
+and also the key technologies and implementation method based on it. 
+Finally, the paper describes the construction technology of TTS based on
+ the TCM and analyzes its performance.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2020-09</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>47-55</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2020 IEEE 3rd International Conference on Information Systems and Computer Aided Education (ICISCAE)</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2020 IEEE 3rd International Conference on Information Systems and Computer Aided Education (ICISCAE)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/ICISCAE51034.2020.9236914">10.1109/ICISCAE51034.2020.9236914</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>28.1.2022, 11:54:31</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>28.1.2022, 11:54:31</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Servers</li>
+					<li>Prototypes</li>
+					<li>Time measurement</li>
+					<li>Trusted Computing</li>
+					<li>Authentication</li>
+					<li>Chain of Trust</li>
+					<li>Databases</li>
+					<li>Kernel</li>
+					<li>Standards</li>
+					<li>TCM</li>
+					<li>Trusted Terminal</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_N3IPLMLZ">
+<div><p>How to build a trusted computing environment?</p>
+<p>Trusted Terminal based on Trust Chains</p>
+<p>&nbsp;</p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_747UU3FQ">IEEE Xplore Full Text PDF					</li>
+					<li id="item_PTVQV7Z5">IEEE Xplore Abstract Record					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_6WHMT8QF" class="item conferencePaper">
+			<h2>Research of Trust Chain Improvement Technology</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Jiang Yi</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Lv Weike</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Liu Xiangbin</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>Trust chain is one of the key technologies in trusted 
+computing. According to analyzing and researching the concept and 
+structure of trusted computing, this paper proposes an improved method 
+to measure trust chain. Trust measurement is computed directly by CRTM, 
+and then draw a conclusion that the novel method is much better than 
+that before improvement by comparing the integrity and authenticity 
+using a computing formula.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2010-04</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Band</th>
+						<td>1</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>294-297</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2010 Second International Conference on Networks Security, Wireless Communications and Trusted Computing</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2010 Second International Conference on Networks Security, Wireless Communications and Trusted Computing</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/NSWCTC.2010.74">10.1109/NSWCTC.2010.74</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>28.1.2022, 11:44:47</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>28.1.2022, 11:44:47</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computer architecture</li>
+					<li>Computer networks</li>
+					<li>Wireless communication</li>
+					<li>Hardware</li>
+					<li>Operating systems</li>
+					<li>Application software</li>
+					<li>Computer science</li>
+					<li>Computer security</li>
+					<li>Secure storage</li>
+					<li>Time measurement</li>
+					<li>TPM</li>
+					<li>Trust Chain</li>
+					<li>Trust Measurement</li>
+					<li>Trusted Computing</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_GDEMJTVZ">
+<div><p>Betrachtet die Chain of Trust in Bezug auf Hardware -&gt; Trusted Computing</p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_EDPWI7N7">IEEE Xplore Full Text PDF					</li>
+					<li id="item_RFQX33YJ">IEEE Xplore Abstract Record					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_QPFTNM9F" class="item conferencePaper">
+			<h2>Research of a Multi-dimension Measurement Trusting Model Based on Markov Chain</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Hongyan Mao</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Yixiang Chen</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>There are uncertain, dynamic and subjective features about 
+trust relation in realistic network society, how to accurately depict 
+and compute the trust values is a challenging issue in trust computing. 
+Integrating with practical e-commerce application, this paper introduces
+ a novel multi-dimension trusting model based on Markov chain mechanism 
+consisting of evaluating, calculating, filtrating, and publication 
+center. The multi-dimension evaluation metrics include the functional 
+and nonfunctional properties and the corresponding weights. We adopt the
+ continuous evaluation values to measure the trustworthiness of 
+services. The Markov's chain-based trust measurement is given to 
+dynamically calculate the trust value and discover the malicious 
+behaviors. In order to conveniently manage and avoid the dead-lock, some
+ constraint rules are proposed.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2008-12</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Band</th>
+						<td>2</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>71-76</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2008 IEEE/IFIP International Conference on Embedded and Ubiquitous Computing</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2008 IEEE/IFIP International Conference on Embedded and Ubiquitous Computing</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/EUC.2008.139">10.1109/EUC.2008.139</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.2.2022, 18:14:15</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.2.2022, 18:14:31</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computer networks</li>
+					<li>Social network services</li>
+					<li>Pervasive computing</li>
+					<li>Data security</li>
+					<li>Software engineering</li>
+					<li>Clouds</li>
+					<li>Embedded computing</li>
+					<li>Societies</li>
+					<li>Software measurement</li>
+					<li>Ubiquitous computing</li>
+					<li>Multidimensional</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_3KJVG2TB">IEEE Xplore Full Text PDF					</li>
+					<li id="item_64YGYKV8">IEEE Xplore Abstract Record					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_4TMCKRVJ" class="item conferencePaper">
+			<h2>Research and Design of Trusted Enhancement Model for Wireless Sensor Computing Environment</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Dang Xinlai</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Qiang Jie</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Li Dong</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>Analyze the security threats faced by wireless sensors and 
+summarize the causes of security threats. A security protection system 
+for wireless sensor networks is proposed, which adopts “three layers of 
+defense under one center”. Establish a proactive defense system for 
+trusted computing environments, trusted zone boundaries, and trusted 
+communication networks under the management of a trusted security 
+management center; to ensure that the computing environments of wireless
+ sensors, wireless access points, and service servers are trusted, As 
+well as the interconnection between different devices, based on the idea
+ of trusted computing, a trusted enhancement framework for three types 
+of devices is proposed. Finally, the trust transfer model of embedded 
+system is built to provide a basis for the safe start and operation of 
+wireless sensors.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2019-10</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>412-417</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2019 IEEE 1st International Conference on Civil Aviation Safety and Information Technology (ICCASIT)</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2019 IEEE 1st International Conference on Civil Aviation Safety and Information Technology (ICCASIT)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/ICCASIT48058.2019.8973136">10.1109/ICCASIT48058.2019.8973136</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>12.2.2022, 09:58:21</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>12.2.2022, 09:58:21</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>trust chain</li>
+					<li>bedded system</li>
+					<li>computing environment trusted enhancement model</li>
+					<li>wireless sensor</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_SY3FGB9F">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_AJPRMTD2" class="item conferencePaper">
+			<h2>Research and application of trusted computing platform based on portable TPM</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Weiwei Fang</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Changsheng Zhou</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Ying Zhang</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Liang Zhang</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>Trusted computing has become a new and challenging research 
+issue in the field of information security. We presented the principle 
+mechanism of TPM (trusted platform module) and TSS (TCG Software Stack),
+ introduced the key components and framework of trusted computing 
+platform, and proposed a new technology named portable TPM, which has an
+ advantage of not requiring to amend computer mainboard compared to 
+traditional TPM technology. Theoretic analysis demonstrated the 
+effectiveness of this new trusted computing platform.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2009-08</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>506-509</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2009 2nd IEEE International Conference on Computer Science and Information Technology</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2009 2nd IEEE International Conference on Computer Science and Information Technology</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/ICCSIT.2009.5234829">10.1109/ICCSIT.2009.5234829</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.2.2022, 17:33:48</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.2.2022, 17:33:48</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Information security</li>
+					<li>trusted computing</li>
+					<li>Hardware</li>
+					<li>TPM</li>
+					<li>Cryptography</li>
+					<li>Information science</li>
+					<li>Computer applications</li>
+					<li>Computer industry</li>
+					<li>Data security</li>
+					<li>Portable computers</li>
+					<li>Protection</li>
+					<li>Random number generation</li>
+					<li>trusted chain</li>
+					<li>trusted root</li>
+					<li>TSS</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_7CPFW4II">IEEE Xplore Full Text PDF					</li>
+					<li id="item_LJPZ55JJ">IEEE Xplore Abstract Record					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_YHSQBG2R" class="item conferencePaper">
+			<h2>Q-Chain: building reputation based trust chains in decentralized peer-to-peer networks</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>P. Kumar</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>S. Gopalan</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>V. Sridhar</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>Peer-to-peer (P2P) networks are increasingly gaining 
+acceptance over the Internet as they provide an infrastructure for 
+content search and exchange between anonymous peers. The open and 
+anonymous nature of P2P networks exposes a number of security 
+vulnerabilities including the problem of finding reliable trustworthy 
+communication partners. In this paper, we propose Q-Chain which provides
+ a trust computation framework by building reputation based trust chains
+ in decentralized P2P networks. Separate Q-Chains are established to 
+evaluate trustworthiness of a peer for the different content types it 
+provides to other peers in the P2P network. A peer's trust rating value 
+is present across several Q-Chains which makes trust computation and 
+management more fault-tolerant in a highly dynamic P2P environment. We 
+implemented Q-Chain using GnutellaSim simulator and the trust 
+computation results obtained are encouraging and more accurate than some
+ of the existing models</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2005-12</td>
+					</tr>
+					<tr>
+					<th>Kurztitel</th>
+						<td>Q-Chain</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>5 pp.-</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2005 International Conference on Collaborative Computing: Networking, Applications and Worksharing</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2005 International Conference on Collaborative Computing: Networking, Applications and Worksharing</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/COLCOM.2005.1651236">10.1109/COLCOM.2005.1651236</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>12.2.2022, 09:51:38</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>12.2.2022, 09:51:38</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computer networks</li>
+					<li>Environmental management</li>
+					<li>Peer to peer computing</li>
+					<li>IP networks</li>
+					<li>Quality of service</li>
+					<li>Collaboration</li>
+					<li>Fault tolerance</li>
+					<li>Intelligent networks</li>
+					<li>Telecommunication network reliability</li>
+					<li>Web and internet services</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_27NSNEDI">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_UNUIS3NV" class="item conferencePaper">
+			<h2>P2P dynamic trust management system based on trust network</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Xiangkun Dai</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Caiyi Zhu</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Yucui Guo</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>In this paper, we construct a P2P dynamic trust management 
+system based on the concept of trust network that covers aggregation 
+computation of trust degree, the selection of trust chains and the 
+assessment of overall trust. In particular, we optimized the searching 
+algorithm of trust chains and the calculation of recommendation trust. 
+The results of simulation show that the system can ameliorate the 
+current research with respect to the overhead of computation and the 
+lack of reliability. The constructed dynamic trust management system can
+ provide network nodes with trust value effectively, objectively and 
+dynamically, which can ensure the security and the stability of 
+information systems.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2012-06</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>165-170</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>Proceedings Title: 2012 International Conference on Cyber Security, Cyber Warfare and Digital Forensic (CyberSec)</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>Proceedings Title: 2012 International Conference on Cyber Security, Cyber Warfare and Digital Forensic (CyberSec)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/CyberSec.2012.6246132">10.1109/CyberSec.2012.6246132</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>12.2.2022, 09:09:47</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>12.2.2022, 09:09:47</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Educational institutions</li>
+					<li>Mathematical model</li>
+					<li>Analytical models</li>
+					<li>Context</li>
+					<li>Load modeling</li>
+					<li>P2P</li>
+					<li>Peer to peer computing</li>
+					<li>recommendation trust</li>
+					<li>Reliability</li>
+					<li>searching algorithm</li>
+					<li>trust network</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_WKZDYNNW">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_DIWQ2VKX" class="item conferencePaper">
+			<h2>Model of trust management based on finite state machine</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Caiyi Zhu</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Xiangkun Dai</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>Operations such as application and services are the basis of 
+daily work on computers, safe and reliable application is an important 
+goal of modern research on information security. In this passage, we 
+build trust transfer model based on existing ideas of trusted computing.
+ We guarantee application's static trust by ensure the integrity of 
+application's dynamic library, we guarantee dynamic trust by building 
+transfer model of the trust chain and by analyzing interactions between 
+different applications, hence, the overall trust of application is 
+ensured. Based on the idea of finite state machine and noninterference 
+theory, we abstract computer system into applications, actions and 
+different output states. We define dynamic trust by using mathematical 
+language, provide prerequisites and properties of dynamic trust, deduce 
+theorem of dynamic trust of application and demonstrate the theorem in 
+our model.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2012-06</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>161-164</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>Proceedings Title: 2012 International Conference on Cyber Security, Cyber Warfare and Digital Forensic (CyberSec)</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>Proceedings Title: 2012 International Conference on Cyber Security, Cyber Warfare and Digital Forensic (CyberSec)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/CyberSec.2012.6246115">10.1109/CyberSec.2012.6246115</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>28.1.2022, 12:57:03</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>28.1.2022, 12:57:03</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computational modeling</li>
+					<li>Computers</li>
+					<li>Educational institutions</li>
+					<li>Security</li>
+					<li>trust chain</li>
+					<li>Abstracts</li>
+					<li>dynamic library</li>
+					<li>dynamic trust</li>
+					<li>Libraries</li>
+					<li>Mathematical model</li>
+					<li>noninterference theory</li>
+					<li>static trust</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_N6KDEXDE">
+<div><p>Modellierung von Vertrauen auf Basis von Zustandsmaschinen</p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_LU3FUNHD">IEEE Xplore Full Text PDF					</li>
+					<li id="item_DU74MZ9Y">IEEE Xplore Abstract Record					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_PIKWX5WL" class="item conferencePaper">
+			<h2>Mobile trusted hierarchical model and its applications</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Li Tao</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Hu Aiqun</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>Trusted Computing contains a set of mechanisms to construct 
+trusted environment in mobile terminal. But these mechanisms and trusted
+ environment still stop in the stage of technical description which 
+lacks the supporting of strictly formal proof and model's description. 
+The existing research about trusted model diverges from reality and is 
+short of flexibility and implementation. This paper proposes a mobile 
+trusted hierarchical model based on security architecture and trusted 
+environment. This model fully considers user's flexibility and is 
+formally described with Z-notation. The actual suppose conditions are 
+given to guide model's application. The testing result of prototype 
+system shows that our model can be efficiently used for constructing 
+mobile terminal's trusted environment.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2014-05</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>1-8</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2014 Communications Security Conference (CSC 2014)</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2014 Communications Security Conference (CSC 2014)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1049/cp.2014.0732">10.1049/cp.2014.0732</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>12.2.2022, 09:13:49</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>12.2.2022, 09:13:49</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>trust chain</li>
+					<li>Trusted Computing</li>
+					<li>mobile security</li>
+					<li>trusted model</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_6N2JL7MV">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_HD5S899L" class="item conferencePaper">
+			<h2>Markov Chain-Based Trust Model for Analyzing Trust Value in Distributed Multicasting Mobile Ad Hoc Networks</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Ben-Jye Chang</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Szu-Liang Kuo</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Ying-Hsin Liang</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>De-Yu Wang</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>The multicast mobile ad-hoc network (multicast MANET) is 
+proposed for a sender sending packets to several receivers through a 
+multicast session. Since members of a multicast group changes 
+frequently, the issue of supporting secure authentication and 
+authorization in multicast MANET becomes more critical than the network 
+provided a fixed central authentication (CA) server. This work thus 
+proposes a two-step secure authentication approach for the multicast 
+MANET. First, a Markov chain trust model is proposed to determine the 
+trust value (TV) for each one-hop neighbors. A nodepsilas trust value is
+ analyzed from its previous trust manner in this group. The proposed 
+trust model is proven as an ergodic continuous-time Markov chain model. 
+Second, a node with the highest TV of a group will be selected as the CA
+ server. For increasing reliability, the node with the second highest TV
+ will be selected as the backup CA server that will take over CA when CA
+ fails. The procedures of the secure authentication for group management
+ are detailed. The security analysis of each procedure is analyzed to 
+guarantee that the proposed approach achieves a secure reliable 
+authentication in multicast MANET. Numerical results indicate that the 
+analytical trust value of each mobile node is very close to that of 
+simulation under various situations. The speed of the convergence of the
+ analytical trust value shows that the analytical results are 
+independent of initial values and the trust classes.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2008-12</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>156-161</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2008 IEEE Asia-Pacific Services Computing Conference</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2008 IEEE Asia-Pacific Services Computing Conference</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/APSCC.2008.27">10.1109/APSCC.2008.27</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.2.2022, 17:38:01</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.2.2022, 17:38:01</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computer networks</li>
+					<li>Authentication</li>
+					<li>Peer to peer computing</li>
+					<li>Data communication</li>
+					<li>Mobile ad hoc networks</li>
+					<li>Network servers</li>
+					<li>TV</li>
+					<li>Wireless sensor networks</li>
+					<li>Ad hoc networks</li>
+					<li>Multicast protocols</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_85I36RF2">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_TBZGFG5T" class="item journalArticle">
+			<h2>Markov Chain Trust Model for Trust-Value Analysis and Key Management in Distributed Multicast MANETs</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Zeitschriftenartikel</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Ben-Jye Chang</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Szu-Liang Kuo</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>To increase efficiency in mobile ad hoc networks (MANETs), the
+ multicast MANET is proposed for a sender that sends packets to several 
+receivers through a multicast session. In MANETs, multicast group 
+members frequently change due to node mobility; thus, supporting secure 
+authentication and authorization in a multicast MANET is more critical 
+than that in a wired network with a centralized certificate 
+authentication (CA) server. This paper thus proposes a two-step secure 
+authentication approach for multicast MANETs. First, a Markov chain 
+trust model is proposed to determine the trust value (TV) for each 
+one-hop neighbor. A node's TV is analyzed from its previous trust manner
+ that was performed in this group. The proposed trust model is proven as
+ an ergodic continuous-time Markov chain model. Second, the node with 
+the highest TV in a group will be selected as the CA server. To increase
+ reliability, the node with the second highest TV will be selected as 
+the backup CA server that will take over CA when CA fails. The 
+procedures of the secure authentication for group management are 
+detailed. The security analysis of each procedure is analyzed to 
+guarantee that the proposed approach achieves a secure reliable 
+authentication in multicast MANETs. In addition, several famous attacks 
+have been analyzed and discussed. Numerical results indicate that the 
+analytical TV of each mobile node is very close to that of simulation 
+under various situations. The speed of the convergence of the analytical
+ TV shows that the analyzed result is independent of initial values and 
+trust classes. This is a good feature of analytical models.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2009-05</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>Conference Name: IEEE Transactions on Vehicular Technology</td>
+					</tr>
+					<tr>
+					<th>Band</th>
+						<td>58</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>1846-1863</td>
+					</tr>
+					<tr>
+					<th>Publikation</th>
+						<td>IEEE Transactions on Vehicular Technology</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/TVT.2008.2005415">10.1109/TVT.2008.2005415</a></td>
+					</tr>
+					<tr>
+					<th>Ausgabe</th>
+						<td>4</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>1939-9359</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>12.2.2022, 09:43:16</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>12.2.2022, 09:43:16</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computer science</li>
+					<li>Authentication</li>
+					<li>Analytical models</li>
+					<li>Peer to peer computing</li>
+					<li>Chaotic communication</li>
+					<li>Data communication</li>
+					<li>Markov chain analysis</li>
+					<li>Mobile ad hoc networks</li>
+					<li>multicast mobile ad hoc network (MANET)</li>
+					<li>Network servers</li>
+					<li>secure authentication</li>
+					<li>trust value (TV)</li>
+					<li>TV</li>
+					<li>Wireless sensor networks</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_VY34T76C">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_XWLL6ZZP" class="item conferencePaper">
+			<h2>Malicious Vehicles Identifying and Trust Management Algorithm for Enhance the Security in 5G-VANET</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>T. Perarasi</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>S. Vidhya</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Leeban Moses M.</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>P. Ramya</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>In this fifth generation of vehicular communication, the 
+security against various malicious attacks are achieved by using 
+malicious vehicles identification and trust management (MAT) algorithm. 
+Basically, the proposed MAT algorithm performs in two dimensions, they 
+are (i) Node trust and (ii) information trust accompanied with a digital
+ signature and hash chain concept. In node trust, the MAT algorithm 
+introduces the special form of key exchanging algorithm to every members
+ of public group key, and later the vehicles with same target location 
+are formed into cluster. The public group key is common for each 
+participant but everyone maintain their own private key to produce the 
+secret key. The proposed MAT algorithm, convert the secrete key into 
+some unique form that allows the CMs (cluster members) to decipher that 
+secrete key by utilizing their own private key. This key exchanging 
+algorithm is useful to prevent the various attacks, like impersonate 
+attack, man in middle attack, etc. In information trust, the MAT 
+algorithm assigns some special nodes (it has common distance from both 
+vehicles) for monitoring the message forwarding activities as well as 
+routing behavior at particular time. This scheme is useful to predict an
+ exact intruder and after time out the special node has dropped all the 
+information. The proposed MAT algorithm accurately evaluates the 
+trustworthiness of each node as well as information to control different
+ attacks and become efficient for improving a group lifetime, stability 
+of cluster, and vehicles that are located on their target place at 
+correct time.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2020-07</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>269-275</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2020 Second International Conference on Inventive Research in Computing Applications (ICIRCA)</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2020 Second International Conference on Inventive Research in Computing Applications (ICIRCA)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/ICIRCA48905.2020.9183184">10.1109/ICIRCA48905.2020.9183184</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.2.2022, 17:53:02</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.2.2022, 17:53:09</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Security</li>
+					<li>Prediction algorithms</li>
+					<li>Clustering algorithms</li>
+					<li>Conferences</li>
+					<li>digital signature</li>
+					<li>group public key</li>
+					<li>group re-cipher key</li>
+					<li>hash chain</li>
+					<li>information trust</li>
+					<li>Interference</li>
+					<li>Node trust</li>
+					<li>NOMA</li>
+					<li>secret key</li>
+					<li>Vehicular ad hoc networks</li>
+					<li>Combination</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_Z3GKN7H3">IEEE Xplore Full Text PDF					</li>
+					<li id="item_JCII3RYA">IEEE Xplore Abstract Record					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_A4XQUUE2" class="item thesis">
+			<h2>Kryptografische Insel zur Realisierung von Angreifertoleranz in redundanten Systemen</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Dissertation</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Johannes Formann</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>In dieser Arbeit wird ein neuer Ansatz zur Angreifertoleranz 
+entwickelt, der durch eine hohe Wiederverwendbarkeit für das 
+individuelle System nur geringen zusätzlichen Entwicklungsaufwand 
+bedeutet. Dazu wird zunächst ein Überblick über die Schwachstellen von 
+verteilten Systemen gegenüber Angreifern dargestellt und bestehende 
+Techniken zur Eindämmung und Tolerierung beschrieben.
+Der Hauptteil befasst sich mit einem neuen Ansatz, bei dem durch 
+geschickte Kombination bestehender Sicherungstechniken für 
+fehlererkennde Systeme und fehlertolerante Systeme, welche 
+Mehrheitsentscheidungen nutzen, eine wiederverwendbare Sicherungsschicht
+ entwickelt wird, die das System auch gegenüber Angreifern tolerant 
+macht. Aufgrund der Wiederverwendbarkeit und der Mitnutzung der 
+benötigten Fehlererkennungs- und Fehlertoleranztechniken ist ein 
+signifikant geringerer Aufwand pro System, verglichen mit herkömmlichen 
+Angreifertoleranztechniken, erzielbar.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2016/05/11</td>
+					</tr>
+					<tr>
+					<th>Sprache</th>
+						<td>de</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>duepublico2.uni-due.de</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://duepublico2.uni-due.dereceive/duepublico_mods_00041160">https://duepublico2.uni-due.dereceive/duepublico_mods_00041160</a></td>
+					</tr>
+					<tr>
+					<th>Heruntergeladen am</th>
+						<td>28.1.2022, 13:41:40</td>
+					</tr>
+					<tr>
+					<th>Rechte</th>
+						<td>https://creativecommons.org/licenses/by-sa/4.0/</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>28.1.2022, 13:41:40</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>28.1.2022, 13:41:59</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_SSIUANCX">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_EMSTR54B" class="item journalArticle">
+			<h2>In Content We Trust: Network-Layer Trust in Content-Centric Networking</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Zeitschriftenartikel</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Cesar Ghali</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Gene Tsudik</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Ersin Uzun</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>Content-Centric Networking (CCN), an instance of 
+information-centric networking, is a candidate next-generation Internet 
+architecture that emphasizes on content distribution by making it 
+directly addressable and routable. By opportunistically caching content 
+within the network, CCN appears to be well-suited for a large-scale 
+content distribution and for meeting the needs of increasingly mobile 
+and bandwidth-hungry applications that dominate today's Internet. To 
+provide content authentication, CCN dictates that each content object 
+must be digitally signed by its respective producer. All entities 
+(consumers and routers) must, in principle, verify the content signature
+ before processing it. However, in practice, this poses two challenges 
+for routers: (1) overhead due to signature verification, key retrieval, 
+and potential certificate chain traversal; and (2) lack of trust 
+context, i.e., determining which public keys are trusted to verify the 
+content signature. This renders signature verification impractical in 
+routers, opening the door for the so-called content poisoning attacks. 
+We study the root causes of the content poisoning attacks and reach the 
+conclusion that meaningful mitigation of content poisoning is contingent
+ upon a network-layer trust management architecture. We propose two 
+approaches: deterministic and probabilistic, that allow routers to 
+detect fake (aka “poisoned”) content objects. The usages of each 
+approach depend on the location and role of routers in the network, as 
+well as their computational capabilities.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2019-10</td>
+					</tr>
+					<tr>
+					<th>Kurztitel</th>
+						<td>In Content We Trust</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>Conference Name: IEEE/ACM Transactions on Networking</td>
+					</tr>
+					<tr>
+					<th>Band</th>
+						<td>27</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>1787-1800</td>
+					</tr>
+					<tr>
+					<th>Publikation</th>
+						<td>IEEE/ACM Transactions on Networking</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/TNET.2019.2926320">10.1109/TNET.2019.2926320</a></td>
+					</tr>
+					<tr>
+					<th>Ausgabe</th>
+						<td>5</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>1558-2566</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.2.2022, 17:55:49</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.2.2022, 17:55:49</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computer architecture</li>
+					<li>Internet</li>
+					<li>Public key</li>
+					<li>trust management</li>
+					<li>Routing protocols</li>
+					<li>Trust management</li>
+					<li>CCN</li>
+					<li>content poisoning</li>
+					<li>content ranking</li>
+					<li>Content-Centric Networking</li>
+					<li>IEEE transactions</li>
+					<li>self-certifying names</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_C8JS3V9I">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_I98WZIX7" class="item conferencePaper">
+			<h2>Hierarchical Trust Chain Framework for IoT Services</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Hoan-Suk Choi</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Gyu Myoung Lee</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Woo-Seop Rhee</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>To support blockchain enabled Internet of Things (IoT) 
+services, a lightweight approach is necessary in order to reduce the 
+processing overhead and memory redundancy. We propose the hierarchical 
+trust chain framework for secured and reliable IoT service provisioning,
+ which consists of local trust chains and global distributed trust chain
+ for scalable and trusted IoT services. The proposed framework provides 
+the time slot based delayed verification algorithm and the blockchain 
+configuration method based on the trust analysis mechanism.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2019-07</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>ISSN: 2165-8536</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>710-712</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2019 Eleventh International Conference on Ubiquitous and Future Networks (ICUFN)</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2019 Eleventh International Conference on Ubiquitous and Future Networks (ICUFN)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/ICUFN.2019.8806149">10.1109/ICUFN.2019.8806149</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>28.1.2022, 11:16:01</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>28.1.2022, 11:16:24</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Security</li>
+					<li>Blockchain</li>
+					<li>Hierarchical architecture</li>
+					<li>Internet of Things</li>
+					<li>IoT Service</li>
+					<li>Peer-to-peer computing</li>
+					<li>Privacy</li>
+					<li>Scalability</li>
+					<li>Servers</li>
+					<li>Trust</li>
+					<li>Trust chain</li>
+					<li>chain</li>
+					<li>hierarchical</li>
+					<li>iot</li>
+					<li>trust</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_TJ4SYH9R">
+<div><p>Lesenswert</p>
+<p>Hierarchisches Trust Chain Framework, um sichere und zuverlässige IoT Services anbieten zu können</p>
+<p>Besteht aus lokalen Trust Chains und global verteilten Trust Cahins für skalierbare und vertrauenswürdige IoT Services</p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_7TNFFPXV">IEEE Xplore Full Text PDF					</li>
+					<li id="item_MPQFF6LF">IEEE Xplore Abstract Record					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_TVRFD9KE" class="item journalArticle">
+			<h2>Heuristic Discovery of Role-Based Trust Chains in Peer-to-Peer Networks</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Zeitschriftenartikel</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Ke Chen</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Kai Hwang</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Gang Chen</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>Credential chains are needed in trusted peer-to-peer (P2P) 
+applications, where trust delegation must be established between each 
+pair of peers at specific role level. Role-based trust is refined from 
+the coarse-grained trust model used in most P2P reputation systems. This
+ paper offers a novel heuristic-weighting approach to selecting the most
+ likely path to construct a role-based trust chain. We apply 
+history-sensitive heuristics to measure the path complexity and assess 
+the chaining efficiency. We discover successive edges of a trust chain, 
+adaptively, to match with the demands from various P2P applications. New
+ heuristic chaining algorithms are developed for backward, forward, and 
+bi-directional discovery of trust chains. Our heuristic chain discovery 
+scheme shortens the search time, reduces the memory requirement, and 
+enhances the chaining accuracy in scalable P2P networks. Consider a 
+trust graph over N credentials and M distinct role nodes. Our heuristic 
+trust-chain discovery algorithms require O(N2 logN) search time and O(M)
+ memory space, if the secondary heuristics are generated off-line in 
+advance. These are improved from O(N3) search time and O(NM) space 
+required in non-heuristic discovery algorithms by Li, Winsborough, and 
+Mitchell (2003). Our analytical results are verified by extensive 
+simulation experiments over typical classes of role-based trust graphs.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2009-01</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>Conference Name: IEEE Transactions on Parallel and Distributed Systems</td>
+					</tr>
+					<tr>
+					<th>Band</th>
+						<td>20</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>83-96</td>
+					</tr>
+					<tr>
+					<th>Publikation</th>
+						<td>IEEE Transactions on Parallel and Distributed Systems</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/TPDS.2008.60">10.1109/TPDS.2008.60</a></td>
+					</tr>
+					<tr>
+					<th>Ausgabe</th>
+						<td>1</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>1558-2183</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>12.2.2022, 09:38:08</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>12.2.2022, 09:38:08</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Analytical models</li>
+					<li>Peer to peer computing</li>
+					<li>Access control</li>
+					<li>Authorization</li>
+					<li>Automatic control</li>
+					<li>Costs</li>
+					<li>Heuristic algorithms</li>
+					<li>heuristic semantics</li>
+					<li>Internet applications</li>
+					<li>IP networks</li>
+					<li>Object oriented modeling</li>
+					<li>Peer-to-peer networks</li>
+					<li>Quality of service</li>
+					<li>role-based credentials</li>
+					<li>trust delegation</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_VPP7AZTW">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_IHAKC38M" class="item conferencePaper">
+			<h2>Formal Analysis of Trust Chain</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Chen Li</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Ruihua Li</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Lu Zhuang</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Xing Zhang</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>In this paper, we propose a formal model of trust chain from 
+the view of measurement structure and remote attestation. Trust chain is
+ an important technology in Trusted Computing and has received 
+considerable attention. However, related researches on trust chain have 
+some deficiencies such as the coarse granularity, single measurement 
+function and ignorance of influence from run-environment when report. 
+The goal of this paper is to analyze these problems and give a formal 
+model to guide practice. To achieve the goal, we propose following 
+improvements: 1. Design a measurement tree by refining coarse-grained 
+entities and enriching measurement functions. 2. Improve the tree 
+structure by introducing measurement agent to simplify the role of 
+entities that is approach to engineering practice. 3. Construct the 
+trust support group as the influence on trust of entities from the 
+system environment. 4. Develop a remote verification process between two
+ arbitrary end-points in Internet such as client and server. This paper 
+offers a prototype toward establishing, reporting and verifying a trust 
+chain in communication, which is applicable in pervasive circumstance.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2010-04</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Band</th>
+						<td>1</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>111-116</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2010 Second International Conference on Networks Security, Wireless Communications and Trusted Computing</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2010 Second International Conference on Networks Security, Wireless Communications and Trusted Computing</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/NSWCTC.2010.34">10.1109/NSWCTC.2010.34</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>28.1.2022, 11:26:06</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>28.1.2022, 11:26:06</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>agent-based measurement tree</li>
+					<li>Computer architecture</li>
+					<li>Computer networks</li>
+					<li>Design engineering</li>
+					<li>Information security</li>
+					<li>Internet</li>
+					<li>measurement tree</li>
+					<li>Prototypes</li>
+					<li>remote attestation</li>
+					<li>Software safety</li>
+					<li>Tree data structures</li>
+					<li>trust chain</li>
+					<li>trust support group</li>
+					<li>trusted computing</li>
+					<li>Web server</li>
+					<li>Wireless communication</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_KNCCHZ3F">IEEE Xplore Full Text PDF					</li>
+					<li id="item_JSAQDBS7">IEEE Xplore Abstract Record					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_C5HPX87U" class="item book">
+			<h2>Flexible certificate management in public key infrastructures / von Evangelos Karatsiolis</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Buch</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Evangelos Karatsiolis</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2007</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://nbn-resolving.de/urn:nbn:de:tuda-tuprints-8781">http://nbn-resolving.de/urn:nbn:de:tuda-tuprints-8781</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>28.1.2022, 14:39:20</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>28.1.2022, 14:39:20</td>
+					</tr>
+				</tbody></table>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_ABIRYHQL">
+<div><p>Flexible PKI Architekturen</p>
+<p>&nbsp;</p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_R45Z5X9L">thesis.pdf					</li>
+					<li id="item_Z5B5LGLW">DNB, Katalog der Deutschen Nationalbibliothek					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_QRHAZ6VG" class="item conferencePaper">
+			<h2>Establishing Chain of Trust in Reconfigurable Hardware</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Thomas Eisenbarth</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Tim Guneysu</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Christof Paar</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Ahmad-Reza Sadeghi</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Marko Wolf</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Russell Tessier</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>Facing ubiquitous threats like computer viruses, trojans and 
+theft of intellectual property, Trusted computing (TC) is an emerging 
+technology towards building trustworthy computing platforms. A recent 
+initiative by the trusted computing group (TCG) specifies the use of 
+trusted platform modules (TPM), currently implemented as dedicated, 
+cost-effective crypto-chips mounted on the main board of computer 
+systems. In this paper we propose implementations for TC functionalities
+ based on more flexible and versatile approaches for reconfigurable and 
+embedded architectures. Our approach allows for (i) a scalable design 
+and update of TPM functionalities in embedded systems, (ii) the 
+integration of the TPM hardware in the chain of trust to bind 
+applications to the underlying TPM and the reconfigurable hardware, and 
+(iii) the design of vendor independent TPMs.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2007-04</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>289-290</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>15th Annual IEEE Symposium on Field-Programmable Custom Computing Machines (FCCM 2007)</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>15th Annual IEEE Symposium on Field-Programmable Custom Computing Machines (FCCM 2007)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/FCCM.2007.23">10.1109/FCCM.2007.23</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.2.2022, 18:09:15</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.2.2022, 18:09:15</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Information security</li>
+					<li>Hardware</li>
+					<li>Authentication</li>
+					<li>Pervasive computing</li>
+					<li>Cryptography</li>
+					<li>Protection</li>
+					<li>Embedded system</li>
+					<li>Fabrics</li>
+					<li>Field programmable gate arrays</li>
+					<li>Reconfigurable logic</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_RF4S34VU">IEEE Xplore Full Text PDF					</li>
+					<li id="item_ZXP48B6C">IEEE Xplore Abstract Record					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_7985L2RU" class="item conferencePaper">
+			<h2>Efficient transitive trust model for mobile terminal</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Tao Li</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Aiqun Hu</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>Based on the theory of Trusted Computing Group (TCG), trust is
+ extended from Trusted Computing Base (TCB) to Operating System (OS) and
+ applications. But the efficient trust chain is required during boot and
+ whole system running time. This paper describes a transitive trust 
+model for mobile terminal. We propose a static trust chain by locating 
+boot-code and OS image into TCB, which is more safety, reliability and 
+efficiency than the trust structure of TCG. After boot, resources are 
+protected by Trusted Agents (TA). Based on this mechanism, dynamic trust
+ chain is proposed. Only the processes granted trust property by TA 
+could access specific resources. The authors have also developed a 
+prototype of trusted mobile terminal system. System booting time is 
+shortened by 5.2s. The experiment results of files and network accessing
+ indicate that the proposed model may cause system performance decrease 
+between 0.1% and 16%. The presented model can be applied to build a high
+ efficiency trusted mobile terminal.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2012-08</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>233-238</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>7th International Conference on Communications and Networking in China</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>7th International Conference on Communications and Networking in China</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/ChinaCom.2012.6417482">10.1109/ChinaCom.2012.6417482</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.2.2022, 17:11:37</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.2.2022, 17:11:37</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computational modeling</li>
+					<li>Security</li>
+					<li>Computer architecture</li>
+					<li>Prototypes</li>
+					<li>trusted computing</li>
+					<li>mobile security</li>
+					<li>Linux</li>
+					<li>Booting</li>
+					<li>Mobile communication</li>
+					<li>transitive trust model</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_FURUCQJ8">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_SQAGNILZ" class="item conferencePaper">
+			<h2>Context-Aware Trust Management System for IoT Applications with Multiple Domains</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Nan Li</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Vijay Varadharajan</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Surya Nepal</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>The Internet of Things (IoT) provides connectivity between 
+heterogeneous devices in different applications, such as smart wildlife,
+ supply chain and traffic management. Trust management system (TMS) 
+assesses the trustworthiness of service with respect to its quality. 
+Under different context information, a service provider may be trusted 
+in one context but not in another. The existing context-aware trust 
+models usually store trust values under different contexts and search 
+the closest (to a given context) record to evaluate the trustworthiness 
+of a service. However, it is not suitable for distributed 
+resource-constrained IoT devices which have small memory and low power. 
+Reputation systems are applied in many trust models where trustor 
+obtains recommendations from others. In context-based trust evaluation, 
+it requires interactive queries to find relevant information from remote
+ devices. The communication overhead and energy consumption are issues 
+in low power networks like 6LoWPAN. In this paper, we propose a new 
+context-aware trust model for lightweight IoT devices. The proposed 
+model provides a trustworthiness overview of a service provider without 
+storing past behavior records, that is, constant size storage. The 
+proposed model allows a trustor to decide the significance of context 
+items. This could result in distinctive decisions under the same 
+trustworthiness record. We also show the performance of the proposed 
+model under different attacks.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2019-07</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>ISSN: 2575-8411</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>1138-1148</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2019 IEEE 39th International Conference on Distributed Computing Systems (ICDCS)</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2019 IEEE 39th International Conference on Distributed Computing Systems (ICDCS)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/ICDCS.2019.00116">10.1109/ICDCS.2019.00116</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>12.2.2022, 09:54:38</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>12.2.2022, 09:54:38</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Internet of Things</li>
+					<li>Base stations</li>
+					<li>Context modeling</li>
+					<li>Context-Aware Trust Evaluation</li>
+					<li>IoT</li>
+					<li>Performance evaluation</li>
+					<li>Reputation System</li>
+					<li>Trust management</li>
+					<li>Trust Management System</li>
+					<li>Wildlife</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_2DUARIY7">IEEE Xplore Full Text PDF					</li>
+					<li id="item_AKFBAXI4">IEEE Xplore Abstract Record					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_XRZQ6JSM" class="item conferencePaper">
+			<h2>Computational model for trust management in RFID supply chains</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Manmeet Mahinderjit-Singh</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Xue Li</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>Trust management in an open RFID system environment is a 
+nontrivial problem, where different organizations have different 
+business workflows and operate on different standards and protocols. 
+Open RFID systems can only be effective if the systems can trust each 
+other and be collaborative. The open system environment is also 
+constantly evolving. So the trust and the collaborations need to be 
+constantly maintained to cope with changes. RFID is becoming a 
+ubiquitous computing technology imposing security and privacy threats. 
+Counterfeiting in supply chain management is an attack with cloned and 
+fraud RFID tags in order to gain illegal benefits. In this paper we will
+ extend our previous work on a trust framework and construct a 
+computational model for the trust management. The trust evaluation is 
+built into the process of transactions of the data exchange and 
+authorization in order to facilitate a better data sharing and access 
+control. An example of wine counterfeiting will be presented and we will
+ show how our computational trust model helps in reducing fraud brand of
+ wines in supply chain management (SCM).</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2009-10</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>ISSN: 2155-6814</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>734-740</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2009 IEEE 6th International Conference on Mobile Adhoc and Sensor Systems</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2009 IEEE 6th International Conference on Mobile Adhoc and Sensor Systems</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/MOBHOC.2009.5336926">10.1109/MOBHOC.2009.5336926</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>12.2.2022, 09:08:29</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>12.2.2022, 09:08:29</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computational modeling</li>
+					<li>Collaborative work</li>
+					<li>Computational Trust Management (CTM)</li>
+					<li>Counterfeiting</li>
+					<li>Environmental management</li>
+					<li>Open systems</li>
+					<li>Protocols</li>
+					<li>Radiofrequency identification</li>
+					<li>RFID</li>
+					<li>Standards organizations</li>
+					<li>Supply chain management</li>
+					<li>Supply Chain Management (SCM)</li>
+					<li>Supply chains</li>
+					<li>Trust Management (TM)</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_2LP2XJC2">IEEE Xplore Full Text PDF					</li>
+					<li id="item_C6WZ598L">IEEE Xplore Abstract Record					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_MKPM8ASA" class="item conferencePaper">
+			<h2>Chaining trusted links by deploying secured physical identities</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Saleh Mulhem</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Wael Adi</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Ayoub Mars</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Vassilis Prevelakis</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>Efficient trust management between nodes in a huge network is 
+an essential requirement in modern networks. This work shows few generic
+ primitive protocols for creating a trusted link between nodes by 
+deploying unclonable physical tokens as Secret Unknown Ciphers. The 
+proposed algorithms are making use of the clone-resistant physical 
+identity of each participating node. Several generic node authentication
+ protocols are presented. An intermediate node is shown to be usable as a
+ mediator to build trust without having influence on the resulting 
+security chain. The physical clone-resistant identities are using our 
+early concept of Secret Unknown Cipher (SUC) technique. The main target 
+of this work is to show the particular and efficient trust-chaining in 
+large networks when SUC techniques are involved.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2017-09</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>ISSN: 2472-7601</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>215-220</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2017 Seventh International Conference on Emerging Security Technologies (EST)</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2017 Seventh International Conference on Emerging Security Technologies (EST)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/EST.2017.8090426">10.1109/EST.2017.8090426</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>13.2.2022, 13:27:59</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>13.2.2022, 13:40:10</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Internet of Things</li>
+					<li>Authentication</li>
+					<li>Protocols</li>
+					<li>Ciphers</li>
+					<li>Object recognition</li>
+					<li>Secret Unkown Cipher</li>
+					<li>Smart devices</li>
+					<li>Trust Chaining by Physical Tokens</li>
+					<li>Trusted link</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_EE8NPMPP">IEEE Xplore Full Text PDF					</li>
+					<li id="item_DU743XDZ">IEEE Xplore Abstract Record					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_UM5SWD28" class="item conferencePaper">
+			<h2>Chain of Trust Testing Based on Model Checking</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Fan He</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Huanguo Zhang</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Hong Wang</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Mingdi Xu</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Fei Yan</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>Trusted computing and chain of trust are the very mechanisms 
+to solve the security problems of information system. A chain of trust 
+is established by validating each component of hardware and software 
+from the bottom up. There is an urgent need to test the chain of trust 
+according to the specification of TC to ensure its security. This paper 
+presents a test method on chain of trust by model checking. The purpose 
+is to confirm that the measurements stored and reported by the platform 
+configuration register can successfully discriminate a normal boot 
+sequence from an insecure one. As a result, our test shows that the 
+chain of trust on some popular trusted computing platforms don't meet 
+the specifications of Trusted Computing Group.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2010-04</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Band</th>
+						<td>1</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>273-276</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2010 Second International Conference on Networks Security, Wireless Communications and Trusted Computing</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2010 Second International Conference on Networks Security, Wireless Communications and Trusted Computing</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/NSWCTC.2010.264">10.1109/NSWCTC.2010.264</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>28.1.2022, 11:31:13</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>28.1.2022, 11:31:13</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computational modeling</li>
+					<li>Information systems</li>
+					<li>Laboratories</li>
+					<li>Computer networks</li>
+					<li>Information security</li>
+					<li>Aerospace testing</li>
+					<li>chain of trust</li>
+					<li>computation tree logics</li>
+					<li>Computer science education</li>
+					<li>conformance testing</li>
+					<li>Hardware</li>
+					<li>model checking</li>
+					<li>Operating systems</li>
+					<li>Registers</li>
+					<li>trusted computing platform</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_Q4CHY5MQ">
+<div><p>Hardwarebezogene Chain of Trust, untersucht einzelne Hardware bzw. Software Komponenten eines Rechners</p>
+<p>&nbsp;</p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_CPC5PTRD">IEEE Xplore Full Text PDF					</li>
+					<li id="item_45IMV4EX">IEEE Xplore Abstract Record					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_MMULNXUH" class="item conferencePaper">
+			<h2>Building Trust in Container Environment</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Yunlong Guo</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Aimin Yu</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Xiaoli Gong</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Lixin Zhao</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Lijun Cai</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Dan Meng</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>Container technology is an emerging virtualization technology 
+that is more efficient and lightweight than virtual machines. This 
+technology is becoming increasingly popular. However, containers are 
+vulnerable to attackers due to various security issues. It is necessary 
+to build trust between users and their containers, as well as between a 
+remote party and the container in the untrusted container environment. 
+The existing trusted computing technologies build a trust chain from 
+hardware to the running operating system. In this paper, we extend the 
+trust chain to containers and build trust in the container environment. 
+We first boot the computer to a trusted operating system. The trusted OS
+ then verifies programs running on the OS to improve security. We design
+ the well-formed signature list to help users to authorize container 
+executables and modify the Linux kernel to verify executables running in
+ containers. Therefore, the user is able to control what programs can 
+run in his containers and trust the containers. Our approach generates a
+ measurement list and creates a vTPM for each container. A remote party 
+can request the measurement list based on our container state challenge 
+protocol. As a result, a remote party is able to know the container 
+state and decide whether to trust the container. We also implement the 
+executables measurement and verification mechanism and evaluate the 
+performance. The results show the container start delay is no more than 
+3% of the normal container start time and the overhead to measure and 
+verify executables is no more than 1 us in most cases, which is 
+reasonably efficient.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2019-08</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>ISSN: 2324-9013</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>1-9</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2019 18th IEEE International Conference On Trust, Security And
+ Privacy In Computing And Communications/13th IEEE International 
+Conference On Big Data Science And Engineering (TrustCom/BigDataSE)</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2019 18th IEEE International Conference On Trust, Security And
+ Privacy In Computing And Communications/13th IEEE International 
+Conference On Big Data Science And Engineering (TrustCom/BigDataSE)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/TrustCom/BigDataSE.2019.00011">10.1109/TrustCom/BigDataSE.2019.00011</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>12.2.2022, 09:59:57</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>12.2.2022, 09:59:57</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Security</li>
+					<li>Kernel</li>
+					<li>Protocols</li>
+					<li>container, trusted computing, secure boot, measurement and verification, remote attestation</li>
+					<li>Containers</li>
+					<li>Linux</li>
+					<li>Virtual machining</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_X2WCHB5F">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_MMP5PGRZ" class="item book">
+			<h2>Attribute-based Access Control for Smart Grids and Industrial Automation and Control Systems / Jochen Saßmannshausen</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Buch</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Jochen Saßmannshausen</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2020</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://nbn-resolving.de/urn:nbn:de:101:1-2020080905262220875501">http://nbn-resolving.de/urn:nbn:de:101:1-2020080905262220875501</a></td>
+					</tr>
+					<tr>
+					<th>Ort</th>
+						<td>Düren</td>
+					</tr>
+					<tr>
+					<th>Verlag</th>
+						<td>Shaker</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-3-8440-7507-6</td>
+					</tr>
+					<tr>
+					<th>Auflage</th>
+						<td>1. Auflage</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>28.1.2022, 13:38:05</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>28.1.2022, 13:38:05</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_BP2235CB">DNB, Katalog der Deutschen Nationalbibliothek					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_SZ8BSKAX" class="item conferencePaper">
+			<h2>Application-oriented cross-CA certificate trust</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Yihong Long</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Zhihong Tang</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Xu Liu</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>Cross-CA certificate trust is often required in the 
+application of Public Key Infrastructure (PKI). Contrary to the 
+CA-oriented approach for it such as cross-certification, the approach 
+proposed in this paper is application-oriented. In the proposed scheme, 
+various CAs and applications are connected through a number of Trust 
+Gateways (TGWs), which form a backbone to propagate the certificate 
+trust chains from trusted CAs to relying applications. As a result, a 
+trust community is formed. A Community Trust Authority (CTA) acts as a 
+root of trust of the community by asserting the root certificates of the
+ trusted CAs and the relevant security policies. It also asserts the 
+mappings between CAs' private certificate policies and the public ones 
+of the community. An application can rely on the trust built up by this 
+system, and choose to trust certificates from specific CAs by relying on
+ specific certificate trust chains according to its own security 
+policies.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2010-12</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>354-357</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2010 IEEE International Conference on Information Theory and Information Security</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2010 IEEE International Conference on Information Theory and Information Security</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/ICITIS.2010.5689480">10.1109/ICITIS.2010.5689480</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>12.2.2022, 09:23:47</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>12.2.2022, 09:23:47</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Public key</li>
+					<li>Biological system modeling</li>
+					<li>Bridges</li>
+					<li>certificate trust chain</li>
+					<li>Certification</li>
+					<li>Communities</li>
+					<li>cross-CA certificate trust</li>
+					<li>cross-certificattion</li>
+					<li>public key infrastructure</li>
+					<li>Topology</li>
+					<li>trust gateway</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_9NDI2L4A">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_ZINN4392" class="item conferencePaper">
+			<h2>An Algorithm of Constructing Certificates Chain for Trusted P2P Network</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Yin Hui</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Liu Jicheng</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Wang Yuhua</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Zhang Dexian</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>Because of the authentication and authorization based on CA 
+use the centralized control, it is difficult for P2P network. In P2P 
+network, DHT is a good way to search a required certificate, but it is 
+not efficient for constructing the certificate chains including many 
+certificates. This paper proposes a measure of constructing the 
+certificate chain based on the trusted group of points in p2p network. 
+Compared with DHT, It is more efficient because it adopts the structural
+ overlay network in the small world to construct the authorization and 
+authentication certificate chain.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2010-03</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Band</th>
+						<td>2</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>97-100</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2010 International Conference on Challenges in Environmental Science and Computer Engineering</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2010 International Conference on Challenges in Environmental Science and Computer Engineering</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/CESCE.2010.221">10.1109/CESCE.2010.221</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.2.2022, 16:57:38</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.2.2022, 16:57:38</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computer networks</li>
+					<li>Authentication</li>
+					<li>P2P</li>
+					<li>Peer to peer computing</li>
+					<li>Certification</li>
+					<li>Access control</li>
+					<li>Authorization</li>
+					<li>Centralized control</li>
+					<li>Certifications Chain</li>
+					<li>Electronic mail</li>
+					<li>Information science</li>
+					<li>Springs</li>
+					<li>Trusted</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_T9MGCT3S">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_K22WJQED" class="item journalArticle">
+			<h2>A trust management scheme based on behavior feedback for opportunistic networks</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Zeitschriftenartikel</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Chen Xi</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Sun Liang</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Ma Jianfeng</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Ma Zhuo</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>In the harsh environment where node density is sparse, the 
+slow-moving nodes cannot effectively utilize the encountering 
+opportunities to realize the self-organized identity authentications, 
+and do not have the chance to join the network routing. However, 
+considering most of the communications in opportunistic networks are 
+caused by forwarding operations, there is no need to establish the 
+complete mutual authentications for each conversation. Accordingly, a 
+novel trust management scheme is presented based on the information of 
+behavior feedback, in order to complement the insufficiency of identity 
+authentications. By utilizing the certificate chains based on social 
+attributes, the mobile nodes build the local certificate graphs 
+gradually to realize the web of “Identity Trust” relationship. 
+Meanwhile, the successors generate Verified Feedback Packets for each 
+positive behavior, and consequently the “Behavior Trust” relationship is
+ formed for slow-moving nodes. Simulation result shows that, by 
+implementing our trust scheme, the delivery probability and trust 
+reconstruction ratio can be effectively improved when there are large 
+numbers of compromised nodes, and it means that our trust management 
+scheme can efficiently explore and filter the trust nodes for secure 
+forwarding in opportunistic networks.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2015-04</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>Conference Name: China Communications</td>
+					</tr>
+					<tr>
+					<th>Band</th>
+						<td>12</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>117-129</td>
+					</tr>
+					<tr>
+					<th>Publikation</th>
+						<td>China Communications</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/CC.2015.7114058">10.1109/CC.2015.7114058</a></td>
+					</tr>
+					<tr>
+					<th>Ausgabe</th>
+						<td>4</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>1673-5447</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>12.2.2022, 09:47:02</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>12.2.2022, 09:47:02</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Authentication</li>
+					<li>Context</li>
+					<li>trust management</li>
+					<li>Cryptography</li>
+					<li>forwarding protocols</li>
+					<li>key management</li>
+					<li>Mobile nodes</li>
+					<li>opportunistic networks</li>
+					<li>Routing protocols</li>
+					<li>verified feedback packet</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_8KS2LPF7">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_J2D8F7LJ" class="item conferencePaper">
+			<h2>A Trust Chain Assessment Method Based on Blockchain for SDN Network Nodes</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Yifan Liu</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Bo Zhao</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Xiaofei Li</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Shuo Wang</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Bin Zhang</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Zhenpeng Liu</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>The SDN node can complete the forwarding task efficiently and 
+reliably does not attract enough attention. A new method called 
+TrustBlock was proposed, which introduces the SDN node trust evaluation 
+and block chain to ensure the trust value authenticity, irreparability 
+and openness. The weight of each evaluation attribute is determined by 
+the entropy method, which avoids the problem that the subjective 
+judgment method is not adaptable to the weight setting. Simulation 
+results show that TrustBlock can effectively identify untrusted nodes in
+ SDN networks.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2019-08</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>240-245</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2019 IEEE International Conference on Smart Internet of Things (SmartIoT)</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2019 IEEE International Conference on Smart Internet of Things (SmartIoT)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/SmartIoT.2019.00044">10.1109/SmartIoT.2019.00044</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.2.2022, 17:09:41</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.2.2022, 17:09:41</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Blockchain</li>
+					<li>Authentication</li>
+					<li>Reliability</li>
+					<li>Authorization</li>
+					<li>Entropy</li>
+					<li>Network node</li>
+					<li>Software-Defined Networking</li>
+					<li>Task analysis</li>
+					<li>Trust evaluation</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_F6E79SP3">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_IBGV7U38" class="item conferencePaper">
+			<h2>A Survey on Authorization in Distributed Systems: Information Storage, Data Retrieval and Trust Evaluation</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Ava Ahadipour</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Martin Schanzenbach</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>In distributed environments, entities are distributed among 
+different security domains and they do not have prior knowledge of one 
+another. In this setting, distributed systems and their security 
+components such as entities, certificates, credentials, policies and 
+trust values are dynamic and constantly changing. Thus, access control 
+models and trust approaches are necessary to support the dynamic and 
+distributed features of such systems and their components. The objective
+ of this paper is to present a comprehensive survey about the security 
+research in distributed systems. We have reviewed the dynamic and 
+distributed nature of the components and evaluation methods of major 
+authorization systems and access control models in existing literature. 
+Based on this overview, we present a survey of selected trust schemes. 
+We provide a categorization for recommendation-based and 
+reputation-based trust models based on trust evaluation. Additionally, 
+we use credential or certificate storage and chain discovery methods for
+ categorizing evidence-based and policy-based trust models. This work 
+can be used as a reference guide to understand authorization and trust 
+management and to further research fully decentralized and distributed 
+authorization systems.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2017-08</td>
+					</tr>
+					<tr>
+					<th>Kurztitel</th>
+						<td>A Survey on Authorization in Distributed Systems</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>ISSN: 2324-9013</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>1016-1023</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2017 IEEE Trustcom/BigDataSE/ICESS</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2017 IEEE Trustcom/BigDataSE/ICESS</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/Trustcom/BigDataSE/ICESS.2017.346">10.1109/Trustcom/BigDataSE/ICESS.2017.346</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>20.2.2022, 12:49:57</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>20.2.2022, 12:49:57</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computational modeling</li>
+					<li>Cloud computing</li>
+					<li>Authorization</li>
+					<li>Lattices</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_CQNRKU7Y">IEEE Xplore Full Text PDF					</li>
+					<li id="item_9CPBHN5W">IEEE Xplore Abstract Record					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_5JMJ5L3Y" class="item conferencePaper">
+			<h2>A Study on the Design and Implementation of EPCIS Trust Model</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Sun Jing</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Ma Yu-Jian</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Zhao Hui-Qun</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Xiao Hui-Bin</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>The paper introduces the structure of the EPC Network, 
+analyzes the potential security problems of the EPC Network Information 
+Service (EPCIS). Expatiates the Light PKI EPCIS Trust Model based on 
+PKI, the proposed light PKI trust architecture is much simpler and 
+efficient. Put forward a based on the Enterprise Trust and Collaboration
+ Model (ETCM) and the search algorithm of the trust corporate relations 
+between the different EPCIS, proposes an effective solution of the EPCIS
+ information interaction about the authentication and authorization 
+security issues.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2008-12</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Band</th>
+						<td>3</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>713-716</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2008 International Conference on Computer Science and Software Engineering</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2008 International Conference on Computer Science and Software Engineering</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/CSSE.2008.1191">10.1109/CSSE.2008.1191</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.2.2022, 18:06:11</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.2.2022, 18:06:11</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Information security</li>
+					<li>Computer science</li>
+					<li>Authentication</li>
+					<li>Radiofrequency identification</li>
+					<li>Access control</li>
+					<li>Authorization</li>
+					<li>IP networks</li>
+					<li>EPC Network</li>
+					<li>EPCIS</li>
+					<li>ETCM</li>
+					<li>Paper technology</li>
+					<li>PKI</li>
+					<li>Software architecture</li>
+					<li>Software engineering</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_Q33UCV6K">IEEE Xplore Full Text PDF					</li>
+					<li id="item_R5NITQJS">IEEE Xplore Abstract Record					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_AJGVJ9WX" class="item conferencePaper">
+			<h2>A Study on Document Password Management using the Trust-Chain Based SPT (Work-in-Progress)</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Hyung-Jong Kim</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Soyeon Park</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>The password setting of the MS-Office document file is a 
+representative security countermeasure which is commonly used. 
+Especially in the SOHO (Small Office Home Office) company case, the 
+password for the MS-Office document file could be the affordable and 
+solitary solution for the document security. By setting the password of 
+the document, the owner of the file can ensure the confidentiality and 
+integrity of the content of the document file. However, there are issues
+ in this simple security mechanism such as the dependency of the 
+strength of passwords and the difficulty of the password management. In 
+this work, we propose two mechanisms for overcoming these two issues by 
+adding simple but effective mechanisms named the SPT (Secure Password 
+Translation) and the chain of trust. The SPT generates passwords for the
+ MS-Office document files and the generated password has enough strength
+ that the government regulation requires. For the preserving the 
+integrity of the passwords and software components, we propose the chain
+ of trust. By using these mechanisms, SOHO companies can preserve the 
+confidentiality and integrity of the document files. In addition, the 
+implementation of the trust-chain based SPT is easy and affordable to 
+deploy. The contribution of this work is in proposing the design of 
+software for managing passwords of the MS-Office document using SPT and 
+the chain of trust.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2018-07</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>30-33</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2018 International Conference on Software Security and Assurance (ICSSA)</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2018 International Conference on Software Security and Assurance (ICSSA)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/ICSSA45270.2018.00016">10.1109/ICSSA45270.2018.00016</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>12.2.2022, 09:13:14</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>12.2.2022, 09:13:14</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Companies</li>
+					<li>Encryption</li>
+					<li>Password</li>
+					<li>Public key</li>
+					<li>Secure Password Translator, Document Security Management, Chain of Trust, SOHO</li>
+					<li>Software</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_MIRCENZ3">IEEE Xplore Full Text PDF					</li>
+					<li id="item_C3QQD9C4">IEEE Xplore Abstract Record					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_47YEZ5ZB" class="item conferencePaper">
+			<h2>A strategy for trust propagation along the more trusted paths</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Marzieh Kianinejad</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Peyman Kabiri</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>The main goal of social networks are sharing and exchanging 
+information among users. With the rapid growth of social networks on the
+ Web, the most of interactions are conducted among unknown individuals. 
+On the other hand, with increasing the biased behaviors in online 
+communities, ability to assess the level of trustworthiness of a person 
+before interacting with him has an important influence on users' 
+decisions. Trust inference is a method used for this purpose. This paper
+ studies propagating trust values along trust relationships in order to 
+estimate the reliability of an anonymous person from the point of view 
+of the user who intends to trust him/her. It describes a new approach 
+for predicting trust values in social networks. The proposed method 
+selects the most reliable trust paths from a source node to a 
+destination node. In order to select the optimal paths, a new relation 
+for calculating trustable coefficient based on previous performance of 
+users in the social network is proposed. In ciao dataset there is a 
+column called helpfulness. Helpfulness values represent previous 
+performance of users in the social network. Advantages of this algorithm
+ is its simplicity in trust calculation, using a new entity in dataset 
+and its improvement in accuracy. The results of the experiments on Ciao 
+dataset indicate that accuracy of the proposed method in evaluating 
+trust values is higher than well-known methods in this area including 
+TidalTrust, MoleTrust methods.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2018-03</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>1-6</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2018 3rd Conference on Swarm Intelligence and Evolutionary Computation (CSIEC)</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2018 3rd Conference on Swarm Intelligence and Evolutionary Computation (CSIEC)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/CSIEC.2018.8405406">10.1109/CSIEC.2018.8405406</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>12.2.2022, 09:15:29</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>12.2.2022, 09:15:29</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Trust</li>
+					<li>Trust chain</li>
+					<li>Reliability</li>
+					<li>Classification algorithms</li>
+					<li>Computer network reliability</li>
+					<li>Feature extraction</li>
+					<li>Prediction algorithms</li>
+					<li>Prediction methods</li>
+					<li>Social network services</li>
+					<li>Trust network</li>
+					<li>Trust paths</li>
+					<li>Trust propagation</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_28Q39ZNC">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_DCANV6A6" class="item journalArticle">
+			<h2>A Novel Light-Weight Subjective Trust Inference Framework in MANETs</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Zeitschriftenartikel</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Hui Xia</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Zhetao Li</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Yuhui Zheng</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Anfeng Liu</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Young-June Choi</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Hiroo Sekiya</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>There is an inherent reliance on collaboration among the 
+participants of mobile ad hoc networks in order to achieve the fixed 
+functionalities. However, they are susceptible to the destruction of the
+ malicious attacks or denial of cooperation. Therefore, it becomes 
+obvious that the security issue is urgently needed to be addressed. Over
+ the last few years, many trust-considered countermeasures have been 
+proposed. The design of trust quantification methods is the key of these
+ countermeasures. In this study, we abstract a novel light-weight 
+subjective trust inference framework, which is divided into trust 
+assessment and trust prediction. The process of node trust assessment is
+ based on node's historical behaviours. Then utilizing the obtained 
+trust data sequence, we introduce the SCGM(1,1)-weighted Markov 
+stochastic chain measure to predict node's trust for future decision 
+making. Experimental results have been conducted to evaluate the 
+effectiveness of the proposed trust model. As an important security 
+application, based on the standard On-Demand Multicast Routing Protocol 
+(ODMRP), we make four major improvements which take the issue of trust 
+into consideration, and propose a novel trust-based routing protocol 
+called the On-Demand Trust-Based Multicast Routing protocol (ODTMRP). 
+And finally, convincing experimental results are presented using three 
+routing evaluation metrics.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2020-04</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>Conference Name: IEEE Transactions on Sustainable Computing</td>
+					</tr>
+					<tr>
+					<th>Band</th>
+						<td>5</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>236-248</td>
+					</tr>
+					<tr>
+					<th>Publikation</th>
+						<td>IEEE Transactions on Sustainable Computing</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/TSUSC.2018.2817219">10.1109/TSUSC.2018.2817219</a></td>
+					</tr>
+					<tr>
+					<th>Ausgabe</th>
+						<td>2</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>2377-3782</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.2.2022, 17:36:03</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.2.2022, 17:36:03</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computational modeling</li>
+					<li>Security</li>
+					<li>Routing protocols</li>
+					<li>Ad hoc networks</li>
+					<li>malicious attack</li>
+					<li>Mobile ad hoc network</li>
+					<li>Mobile computing</li>
+					<li>Monitoring</li>
+					<li>Routing</li>
+					<li>routing evaluation metric</li>
+					<li>trust framework</li>
+					<li>trust-based routing protocol</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_BAAHAT2J">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_WMYWH5PD" class="item conferencePaper">
+			<h2>A Multi Trust Chain Scheme in Trusted Cross-Domain Interaction</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Liye Tian</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Wei Jiang</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>A formal trust chain model is proposed, which includes 
+important concepts in trust chain such as trust root, expection, and it 
+is able to represent measurement, extension and attestation processes. 
+This model is a tool for researchers to research trust chain in theory. 
+In the context of cross domain interaction, this paper shows the model 
+deal with two trust chains to make two entities from different domain 
+interact. At last, the effectiveness of this method in production 
+information system is analyzed.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2012-08</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>550-553</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2012 International Conference on Industrial Control and Electronics Engineering</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2012 International Conference on Industrial Control and Electronics Engineering</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/ICICEE.2012.151">10.1109/ICICEE.2012.151</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>28.1.2022, 10:31:50</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>28.1.2022, 10:58:49</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computational modeling</li>
+					<li>Computers</li>
+					<li>cross-domain interaction</li>
+					<li>Educational institutions</li>
+					<li>formal</li>
+					<li>Information systems</li>
+					<li>Laboratories</li>
+					<li>Production</li>
+					<li>Security</li>
+					<li>trust chain model</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_MRIUAUGC">
+<div><p>Sollte detaillierter gelesen werden</p>
+<p>Stellt ein Modell dar, um mehrere Trust Chains von verschiedenen Domänen miteinander zu verknüpfen.</p>
+<p>&nbsp;</p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_S8UPP4FB">IEEE Xplore Full Text PDF					</li>
+					<li id="item_9FFZ4FKM">IEEE Xplore Abstract Record					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_29SENSV5" class="item journalArticle">
+			<h2>A metric to assess the trustworthiness of certificate authorities</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Zeitschriftenartikel</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Michael P. Heinl</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>In the recent past, there has been a series of security 
+incidents leading to increasing concern regarding the trust model 
+currently employed by public key infrastructures. One of the key 
+criticisms is the architecture’s implicit assumption that certificate 
+authorities (CAs) are trustworthy a priori. This work proposes a metric 
+to compensate this assumption by a differentiating assessment of a CA’s 
+individual trustworthiness based on objective criteria. The metric 
+utilizes a wide range of factors derived from existing policies, 
+technical guidelines, and research. It consists of self-contained 
+submetrics allowing the simple extension of the existing set of 
+criteria. The focus is thereby on aspects which can be assessed by 
+employing practically applicable methods of independent data collection.
+ The metric is meant to help organizations, individuals, and service 
+providers deciding which CAs to trust or distrust. For this, the 
+modularized submetrics are clustered into coherent submetric groups 
+covering a CA’s different properties and responsibilities. By applying 
+individually chosen weightings to these submetric groups, the metric’s 
+outcomes can be adapted to tailored protection requirements according to
+ an exemplifying attacker model.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2019-03-14</td>
+					</tr>
+					<tr>
+					<th>Sprache</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>oparu.uni-ulm.de</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://oparu.uni-ulm.de/xmlui/handle/123456789/12230">https://oparu.uni-ulm.de/xmlui/handle/123456789/12230</a></td>
+					</tr>
+					<tr>
+					<th>Heruntergeladen am</th>
+						<td>28.1.2022, 13:34:23</td>
+					</tr>
+					<tr>
+					<th>Rechte</th>
+						<td>Standard</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>Accepted: 2019-03-14T15:55:02Z
+ISBN: 9781665686488
+Publisher: Universität Ulm</td>
+					</tr>
+					<tr>
+					<th>Publikation</th>
+						<td>Masterthesis</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.18725/OPARU-12173">10.18725/OPARU-12173</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>28.1.2022, 13:34:23</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>28.1.2022, 13:44:17</td>
+					</tr>
+				</tbody></table>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_TKNYGH48">
+<div><p>Metrik zur Bewertung der Vertrauenswürdigkeit von CAs</p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_AEDACSEC">Snapshot					</li>
+					<li id="item_KNC7UZUN">Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_AUG6JXLY" class="item conferencePaper">
+			<h2>A Method of Industrial Internet Entity Mutual Trust Combining PKI and IBE Technology System</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Song Fei</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Shi Yuanbing</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Huang Minghao</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>The industrial Internet has built a new industrial 
+manufacturing and service system with all elements, all industrial 
+chains and all value chains connected through the interconnection of 
+people, machines and things. It breaks the relatively closed and 
+credible production environment of traditional industry. But at the same
+ time, the full interconnection of cross-device, cross-system, and 
+cross-region in the industrial Internet also brings a certain network 
+trust crisis. The method proposed in this paper breaking the relatively 
+closed manufacturing environment of traditional industries, extends the 
+network connection object from human to machine equipment, industrial 
+products and industrial services. It provides a safe and credible 
+environment for the development of industrial Internet, and a trust 
+guarantee for the across enterprises entities and data sharing.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2020-05</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>304-308</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2020 3rd International Conference on Artificial Intelligence and Big Data (ICAIBD)</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2020 3rd International Conference on Artificial Intelligence and Big Data (ICAIBD)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/ICAIBD49809.2020.9137495">10.1109/ICAIBD49809.2020.9137495</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.2.2022, 17:15:59</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.2.2022, 17:30:24</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Production</li>
+					<li>Internet</li>
+					<li>trust chain</li>
+					<li>Authentication</li>
+					<li>Collaboration</li>
+					<li>blockchain</li>
+					<li>certification</li>
+					<li>component</li>
+					<li>Data models</li>
+					<li>industrial internet</li>
+					<li>Industries</li>
+					<li>Memory</li>
+					<li>Chain of Trust Combination</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_RLL84T2G">IEEE Xplore Full Text PDF					</li>
+					<li id="item_MWC66J5B">IEEE Xplore Abstract Record					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_ZV224SV4" class="item conferencePaper">
+			<h2>A Holistic Abstraction to Ensure Trusted Scaling and Memory Speed Trusted Analytics</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Muhammed Akif Agca</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>In this study, a trusted holistic abstraction is proposed and 
+analytically discussed using universal scalability law and Markovian 
+chain Monte-Carlo method. Moreover, a feedback mechanism is modeled to 
+explain the elasticity performance of the proposed distributed system. 
+The system extends the data locality to the edges in a trusted manner 
+and ensures trust while scaling the whole system and increasing the 
+number of nodes. By the help of such a trusted solution, lineage 
+information of the data at the edges enable fault-recovery from an 
+available checkpoint, while maximizing the trustworthiness of the 
+overall system. Innovative distributed data structures, make databases 
+fresh for all scaled nodes by unifying the memory resources; minimize 
+the need to trusted third parties via trusted distributed data 
+structures, which uses checksums of the datum periodically. Hence, 
+multi-layer neural networks and hierarchical tree structures, has 
+confidential data, can be updated and trained dynamically. Searching 
+speed and performance of an object or set of objects in massive systems 
+is maximized while keeping the trustworthiness of the total system. 
+Initial results indicate that the trust cost worth to pay to scale and 
+to keep the performance of the whole system. The System also shows good 
+elasticity in the case of sudden provisioning/de-provisioning of control
+ nodes. The proposed system also has satisfactory resource-allocation 
+capability with efficient clustering thanks to the introduction of 
+distributed ledger-based transaction management and lineage data 
+recording for dynamic management of DAG structures, has sub-modular and 
+disjoint cluster sets. Initial results of micro-blog analytics indicate 
+promising performance of unified batch/interactive/ad-hoc querying with 
+the holistic abstraction.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2019-12</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>1428-1434</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2019 International Conference on Computational Science and Computational Intelligence (CSCI)</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2019 International Conference on Computational Science and Computational Intelligence (CSCI)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/CSCI49370.2019.00267">10.1109/CSCI49370.2019.00267</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>12.2.2022, 09:22:13</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>12.2.2022, 09:22:13</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Scalability</li>
+					<li>Servers</li>
+					<li>Measurement</li>
+					<li>Cloud computing</li>
+					<li>Distributed databases</li>
+					<li>Elasticity</li>
+					<li>Throughput</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_UEUK6YDR">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_SGK69I2E" class="item conferencePaper">
+			<h2>A Construction Method for Alliance-based Network Trust Anchor</h2>
+				<table>
+					<tbody><tr>
+						<th>Typ</th>
+						<td>Konferenz-Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Boxuan Shi</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Feng Zhang</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Chalermpol Charnsripinyo</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Wenbao Jiang</td>
+					</tr>
+					<tr>
+					<th>Zusammenfassung</th>
+						<td>It is difficult for Internet to trace the source of the attack
+ and the identity of the attacker, because the existing TCP/IP protocol 
+does not have an inherent security mechanism such as address 
+authenticity authentication. To solve the security problem of network 
+naming, including address security, and to build a secure and trusted 
+Internet environment, has become an important issue to be solved 
+urgently. Aiming at source address deception, routing hijacking and 
+other issues, this paper proposes a construction method for 
+alliance-based network trust anchor, puts forward the structural model 
+and data storage of the alliance trust anchor, explains the specific 
+functions and processes of the alliance trust anchor, and makes 
+experimental simulations for the peer-to-peer network. The unified trust
+ root structure of the whole network is constructed by decentralization 
+method, and the trust chain of network space is reconstructed.</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2019-03</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Seiten</th>
+						<td>1211-1214</td>
+					</tr>
+					<tr>
+					<th>Titel des Konferenzbandes</th>
+						<td>2019 IEEE 3rd Information Technology, Networking, Electronic and Automation Control Conference (ITNEC)</td>
+					</tr>
+					<tr>
+					<th>Name der Konferenz</th>
+						<td>2019 IEEE 3rd Information Technology, Networking, Electronic and Automation Control Conference (ITNEC)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/ITNEC.2019.8729031">10.1109/ITNEC.2019.8729031</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.2.2022, 17:01:39</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.2.2022, 17:01:39</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Peer-to-peer computing</li>
+					<li>Servers</li>
+					<li>Internet</li>
+					<li>Authentication</li>
+					<li>Alliance trust anchor</li>
+					<li>Decentralization</li>
+					<li>Peer to peer network</li>
+					<li>Public key cryptography</li>
+					<li>Trust anchor</li>
+					<li>Trusted network</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_FJK6STZA">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+		</ul>
+	
+</body></html>
